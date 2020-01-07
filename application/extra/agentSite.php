@@ -12,7 +12,7 @@ return array (
         'backend' => 'zh-cn',
         'frontend' => 'zh-cn',
       ),
-  'fixedpage' => 'dashboard',
+  'fixedpage' => 'agentdashboard',
   'categorytype' =>
       array (
         'default' => 'Default',

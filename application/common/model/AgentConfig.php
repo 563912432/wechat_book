@@ -3,6 +3,7 @@
 namespace app\common\model;
 
 use think\Model;
+use think\Session;
 
 /**
  * 配置模型
@@ -88,7 +89,8 @@ class AgentConfig extends Model
      */
     public static function getGroupList()
     {
-        $groupList = config('agentSite.configgroup');
+//        $groupList = config('agentSite.configgroup');
+        $groupList = session('config.configgroup');
         foreach ($groupList as $k => &$v) {
             $v = __($v);
         }

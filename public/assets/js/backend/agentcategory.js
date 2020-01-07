@@ -5,11 +5,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'agentCategory/index',
-                    add_url: 'agentCategory/add',
-                    edit_url: 'agentCategory/edit',
-                    del_url: 'agentCategory/del',
-                    multi_url: 'agentCategory/multi',
+                    index_url: 'agentcategory/index',
+                    add_url: 'agentcategory/add',
+                    edit_url: 'agentcategory/edit',
+                    del_url: 'agentcategory/del',
+                    multi_url: 'agentcategory/multi',
                     dragsort_url: 'ajax/weigh',
                     table: 'agentCategory',
                 }

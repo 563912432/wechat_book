@@ -39,7 +39,7 @@
             {foreach $siteList as $index=>$vo}
             <div class="tab-pane fade {$vo.active ? 'active in' : ''}" id="{$vo.name}">
                 <div class="widget-body no-padding">
-                    <form id="{$vo.name}-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('general.config/edit')}">
+                    <form id="{$vo.name}-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('agentgeneral.config/edit')}">
                         {:token()}
                         <table class="table table-striped">
                             <thead>
@@ -167,7 +167,7 @@
             </div>
             {/foreach}
             <div class="tab-pane fade" id="addcfg">
-                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('general.config/add')}">
+                <form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('agentgeneral.config/add')}">
                     {:token()}
                     <div class="form-group">
                         <label class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
@@ -192,7 +192,7 @@
                     <div class="form-group">
                         <label for="name" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
                         <div class="col-xs-12 col-sm-4">
-                            <input type="text" class="form-control" id="name" name="row[name]" value="" data-rule="required; length(3~30); remote(general/config/check)"/>
+                            <input type="text" class="form-control" id="name" name="row[name]" value="" data-rule="required; length(3~30); remote(agentgeneral/config/check)"/>
                         </div>
                     </div>
                     <div class="form-group">

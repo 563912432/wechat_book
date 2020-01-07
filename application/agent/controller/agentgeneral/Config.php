@@ -5,7 +5,9 @@ namespace app\agent\controller\agentGeneral;
 use app\common\controller\BackendAgent;
 use app\common\library\Email;
 use app\common\model\AgentConfig as ConfigModel;
+use app\common\model\AgentConfig;
 use think\Exception;
+use think\Session;
 use think\Validate;
 
 /**
@@ -79,6 +81,7 @@ class Config extends BackendAgent
                 foreach ($params as $k => &$v) {
                     $v = is_array($v) ? implode(',', $v) : $v;
                 }
+                $params['agent_id'] = session('agent.id');
                 try {
                     if (in_array($params['type'], ['select', 'selects', 'checkbox', 'radio', 'array'])) {
                         $params['content'] = json_encode(ConfigModel::decode($params['content']), JSON_UNESCAPED_UNICODE);
@@ -88,7 +91,8 @@ class Config extends BackendAgent
                     $result = $this->model->create($params);
                     if ($result !== false) {
                         try {
-                            $this->refreshFile();
+//                            $this->refreshFile();
+                            $this->resetConfig();
                         } catch (Exception $e) {
                             $this->error($e->getMessage());
                         }
@@ -130,7 +134,8 @@ class Config extends BackendAgent
                 }
                 $this->model->allowField(true)->saveAll($configList);
                 try {
-                    $this->refreshFile();
+//                    $this->refreshFile();
+                    $this->resetConfig();
                 } catch (Exception $e) {
                     $this->error($e->getMessage());
                 }
@@ -151,7 +156,8 @@ class Config extends BackendAgent
         if ($name && $config) {
             try {
                 $config->delete();
-                $this->refreshFile();
+//                $this->refreshFile();
+                $this->resetConfig();
             } catch (Exception $e) {
                 $this->error($e->getMessage());
             }
@@ -160,6 +166,25 @@ class Config extends BackendAgent
             $this->error(__('Invalid parameters'));
         }
     }
+
+    /*
+    * 取配置
+    * */
+      protected function resetConfig()
+      {
+        $config = [];
+        foreach (AgentConfig::all(['agent_id' => Session::get('agent.id')]) as $k => $v) {
+          $value = $v->toArray();
+          if (in_array($value['type'], ['selects', 'checkbox', 'images', 'files'])) {
+            $value['value'] = explode(',', $value['value']);
+          }
+          if ($value['type'] == 'array') {
+            $value['value'] = (array)json_decode($value['value'], true);
+          }
+          $config[$value['name']] = $value['value'];
+        }
+        Session::set('config', $config);
+      }
 
     /**
      * 刷新配置文件

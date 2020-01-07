@@ -129,7 +129,7 @@ class Ajax extends BackendAgent
                 'sha1'        => $sha1,
                 'extparam'    => json_encode($extparam),
             );
-            $attachment = model("attachment");
+            $attachment = model("AgentAttachment");
             $attachment->data(array_filter($params));
             $attachment->save();
             \think\Hook::listen("upload_after", $attachment);

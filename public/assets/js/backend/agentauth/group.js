@@ -20,11 +20,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'jstree'], function (
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    "index_url": "agentAuth/group/index",
-                    "add_url": "agentAuth/group/add",
-                    "edit_url": "agentAuth/group/edit",
-                    "del_url": "agentAuth/group/del",
-                    "multi_url": "agentAuth/group/multi",
+                    "index_url": "agentauth/group/index",
+                    "add_url": "agentauth/group/add",
+                    "edit_url": "agentauth/group/edit",
+                    "del_url": "agentauth/group/del",
+                    "multi_url": "agentauth/group/multi",
                 }
             });
 
@@ -33,7 +33,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'jstree'], function (
             //在表格内容渲染完成后回调的事件
             table.on('post-body.bs.table', function (e, json) {
                 $("tbody tr[data-index]", this).each(function () {
-                    if (Config.admin.group_ids.indexOf(parseInt(parseInt($("td:eq(1)", this).text()))) > -1) {
+                    if (Config.agent.group_ids.indexOf(parseInt(parseInt($("td:eq(1)", this).text()))) > -1) {
                         $("input[type=checkbox]", this).prop("disabled", true);
                     }
                 });
@@ -52,7 +52,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'jstree'], function (
                         {field: 'status', title: __('Status'), formatter: Table.api.formatter.status},
                         {
                             field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: function (value, row, index) {
-                                if (Config.admin.group_ids.indexOf(parseInt(row.id)) > -1) {
+                                if (Config.agent.group_ids.indexOf(parseInt(row.id)) > -1) {
                                     return '';
                                 }
                                 return Table.api.formatter.operate.call(this, value, row, index);
@@ -95,7 +95,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'jstree'], function (
                         return false;
                     }
                     $.ajax({
-                        url: "auth/group/roletree",
+                        url: "agentauth/group/roletree",
                         type: 'post',
                         dataType: 'json',
                         data: {id: id, pid: $(this).val()},

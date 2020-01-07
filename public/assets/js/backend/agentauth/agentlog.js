@@ -5,11 +5,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'agentAuth/agentlog/index',
+                    index_url: 'agentauth/agentlog/index',
                     add_url: '',
                     edit_url: '',
-                    del_url: 'agentAuth/agentlog/del',
-                    multi_url: 'agentAuth/agentlog/multi',
+                    del_url: 'agentauth/agentlog/del',
+                    multi_url: 'agentauth/agentlog/multi',
                 }
             });
 
@@ -35,7 +35,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                     text: __('Detail'),
                                     icon: 'fa fa-list',
                                     classname: 'btn btn-info btn-xs btn-detail btn-dialog',
-                                    url: 'auth/adminlog/detail'
+                                    url: 'agentauth/agentlog/detail'
                                 }],
                             formatter: Table.api.formatter.operate
                         }

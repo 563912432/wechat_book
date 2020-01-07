@@ -4,7 +4,7 @@ namespace app\agent\validate;
 
 use think\Validate;
 
-class AgentCategory extends Validate
+class Agentcategory extends Validate
 {
     /**
      * 验证规则

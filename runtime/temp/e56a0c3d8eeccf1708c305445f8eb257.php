@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:93:"F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\index\agentIndex.html";i:1578302664;s:78:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\meta.html";i:1576638344;s:80:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\header.html";i:1576638344;s:78:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\menu.html";i:1578302752;s:81:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\control.html";i:1576638344;s:80:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\script.html";i:1576638344;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:93:"F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\index\agentIndex.html";i:1578302664;s:78:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\meta.html";i:1576638344;s:80:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\header.html";i:1578360270;s:78:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\menu.html";i:1578302752;s:81:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\control.html";i:1576638344;s:80:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\script.html";i:1576638344;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -59,11 +59,11 @@
                 </li>
 
                 <!-- 账号信息下拉框 -->
-                <li class="hidden-xs">
+                <!--<li class="hidden-xs">
                     <a href="javascript:;" data-toggle="checkupdate" title="<?php echo __('Check for updates'); ?>">
                         <i class="fa fa-refresh"></i>
                     </a>
-                </li>
+                </li>-->
 
                 <!-- 清除缓存 -->
                 <li>
@@ -80,7 +80,7 @@
                 </li>
 
                 <!-- 多语言列表 -->
-                <?php if(\think\Config::get('lang_switch_on')): ?>
+            <!--    <?php if(\think\Config::get('lang_switch_on')): ?>
                 <li class="hidden-xs">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                     <ul class="dropdown-menu">
@@ -92,7 +92,7 @@
                         </li>
                     </ul>
                 </li>
-                <?php endif; ?>
+                <?php endif; ?>-->
 
                 <!-- 全屏按钮 -->
                 <li class="hidden-xs">
@@ -116,7 +116,7 @@
                             </p>
                         </li>
                         <!-- Menu Body -->
-                        <li class="user-body">
+                        <!--<li class="user-body">
                             <div class="row">
                                 <div class="col-xs-4 text-center">
                                     <a href="https://www.fastadmin.net" target="_blank"><?php echo __('FastAdmin'); ?></a>
@@ -128,7 +128,7 @@
                                     <a href="https://doc.fastadmin.net" target="_blank"><?php echo __('Docs'); ?></a>
                                 </div>
                             </div>
-                        </li>
+                        </li>-->
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">
@@ -163,6 +163,7 @@
     </div>
     <?php endif; ?>
 </nav>
+
             </header>
 
             <!-- 左侧菜单栏 -->

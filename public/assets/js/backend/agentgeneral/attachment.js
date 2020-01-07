@@ -5,11 +5,11 @@ define(['jquery', 'bootstrap', 'backend', 'form', 'table'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'agentGeneral/attachment/index',
-                    add_url: 'agentGeneral/attachment/add',
-                    edit_url: 'agentGeneral/attachment/edit',
-                    del_url: 'agentGeneral/attachment/del',
-                    multi_url: 'agentGeneral/attachment/multi',
+                    index_url: 'agentgeneral/attachment/index',
+                    add_url: 'agentgeneral/attachment/add',
+                    edit_url: 'agentgeneral/attachment/edit',
+                    del_url: 'agentgeneral/attachment/del',
+                    multi_url: 'agentgeneral/attachment/multi',
                     table: 'attachment'
                 }
             });
@@ -24,7 +24,7 @@ define(['jquery', 'bootstrap', 'backend', 'form', 'table'], function ($, undefin
                     [
                         {field: 'state', checkbox: true,},
                         {field: 'id', title: __('Id')},
-                        {field: 'admin_id', title: __('Admin_id'), visible: false, addClass: "selectpage", extend: "data-source='auth/admin/index' data-field='nickname'"},
+                        {field: 'admin_id', title: __('Admin_id'), visible: false, addClass: "selectpage", extend: "data-source='agentauth/agent/index' data-field='nickname'"},
                         {field: 'user_id', title: __('User_id'), visible: false, addClass: "selectpage", extend: "data-source='user/user/index' data-field='nickname'"},
                         {field: 'url', title: __('Preview'), formatter: Controller.api.formatter.thumb, operate: false},
                         {field: 'url', title: __('Url'), formatter: Controller.api.formatter.url},
@@ -67,7 +67,7 @@ define(['jquery', 'bootstrap', 'backend', 'form', 'table'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'general/attachment/select',
+                    index_url: 'agentgeneral/attachment/select',
                 }
             });
 

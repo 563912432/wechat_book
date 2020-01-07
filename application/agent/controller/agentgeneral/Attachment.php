@@ -1,6 +1,6 @@
 <?php
 
-namespace app\agent\controller\general;
+namespace app\agent\controller\agentGeneral;
 
 use app\common\controller\BackendAgent;
 
@@ -21,7 +21,7 @@ class Attachment extends BackendAgent
     public function _initialize()
     {
         parent::_initialize();
-        $this->model = model('Attachment');
+        $this->model = model('AgentAttachment');
     }
 
     /**

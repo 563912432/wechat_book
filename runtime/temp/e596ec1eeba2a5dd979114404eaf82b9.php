@@ -1,4 +1,56 @@
-<style type="text/css">
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:97:"F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\agentdashboard\index.html";i:1578359897;s:81:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\layout\default.html";i:1576638344;s:78:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\meta.html";i:1576638344;s:80:"F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\common\script.html";i:1576638344;}*/ ?>
+<!DOCTYPE html>
+<html lang="<?php echo $config['language']; ?>">
+    <head>
+        <meta charset="utf-8">
+<title><?php echo (isset($title) && ($title !== '')?$title:''); ?></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+<!-- Loading Bootstrap -->
+<link href="/assets/css/backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.css?v=<?php echo \think\Config::get('site.version'); ?>" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    var require = {
+        config:  <?php echo json_encode($config); ?>
+    };
+</script>
+    </head>
+
+    <body class="inside-header inside-aside <?php echo defined('IS_DIALOG') && IS_DIALOG ? 'is-dialog' : ''; ?>">
+        <div id="main" role="main">
+            <div class="tab-content tab-addtabs">
+                <div id="content">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <section class="content-header hide">
+                                <h1>
+                                    <?php echo __('Dashboard'); ?>
+                                    <small><?php echo __('Control panel'); ?></small>
+                                </h1>
+                            </section>
+                            <?php if(!IS_DIALOG && !$config['fastadmin']['multiplenav']): ?>
+                            <!-- RIBBON -->
+                            <div id="ribbon">
+                                <ol class="breadcrumb pull-left">
+                                    <li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> <?php echo __('Dashboard'); ?></a></li>
+                                </ol>
+                                <ol class="breadcrumb pull-right">
+                                    <?php foreach($breadcrumb as $vo): ?>
+                                    <li><a href="javascript:;" data-url="<?php echo $vo['url']; ?>"><?php echo $vo['title']; ?></a></li>
+                                    <?php endforeach; ?>
+                                </ol>
+                            </div>
+                            <!-- END RIBBON -->
+                            <?php endif; ?>
+                            <div class="content">
+                                <style type="text/css">
     .sm-st {
         background: #fff;
         padding: 20px;
@@ -150,21 +202,22 @@
         padding: 30px 0;
     }
 </style>
-{if preg_match('/\/admin\/|admin\.php|admin_d75KABNWt\.php/i', url())}
+<?php if(preg_match('/\/admin\/|admin\.php|admin_d75KABNWt\.php/i', url())): ?>
 <div class="alert alert-danger-light">
-    {:__('Security tips')}
+    <?php echo __('Security tips'); ?>
 </div>
-{/if}
+<?php endif; ?>
 <div class="panel panel-default panel-intro">
     <div class="panel-heading">
-        {:build_heading(null, false)}
+        <?php echo build_heading(null, false); ?>
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#one" data-toggle="tab">{:__('Dashboard')}</a></li>
-            <li><a href="#two" data-toggle="tab">{:__('Custom')}</a></li>
+            <li class="active"><a href="#one" data-toggle="tab"><?php echo __('Dashboard'); ?></a></li>
+            <li><a href="#two" data-toggle="tab"><?php echo __('Custom'); ?></a></li>
         </ul>
     </div>
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
+            test
             <div class="tab-pane fade active in" id="one">
 
                 <div class="row">
@@ -172,8 +225,8 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totaluser}</span>
-                                {:__('Total user')}
+                                <span><?php echo $totaluser; ?></span>
+                                <?php echo __('Total user'); ?>
                             </div>
                         </div>
                     </div>
@@ -181,8 +234,8 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-violet"><i class="fa fa-book"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalviews}</span>
-                                {:__('Total view')}
+                                <span><?php echo $totalviews; ?></span>
+                                <?php echo __('Total view'); ?>
                             </div>
                         </div>
                     </div>
@@ -190,8 +243,8 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-blue"><i class="fa fa-shopping-bag"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalorder}</span>
-                                {:__('Total order')}
+                                <span><?php echo $totalorder; ?></span>
+                                <?php echo __('Total order'); ?>
                             </div>
                         </div>
                     </div>
@@ -199,14 +252,14 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-green"><i class="fa fa-cny"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalorderamount}</span>
-                                {:__('Total order amount')}
+                                <span><?php echo $totalorderamount; ?></span>
+                                <?php echo __('Total order amount'); ?>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="margin-top: 50px">
                     <div class="col-lg-8">
                         <div id="echart" class="btn-refresh" style="height:200px;width:100%;"></div>
                     </div>
@@ -217,8 +270,8 @@
                                     <div class="col-xs-6 stat-col">
                                         <div class="stat-icon"><i class="fa fa-rocket"></i></div>
                                         <div class="stat">
-                                            <div class="value"> {$todayusersignup}</div>
-                                            <div class="name"> {:__('Today user signup')}</div>
+                                            <div class="value"> <?php echo $todayusersignup; ?></div>
+                                            <div class="name"> <?php echo __('Today user signup'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 30%"></div>
@@ -227,8 +280,8 @@
                                     <div class="col-xs-6 stat-col">
                                         <div class="stat-icon"><i class="fa fa-shopping-cart"></i></div>
                                         <div class="stat">
-                                            <div class="value"> {$todayuserlogin}</div>
-                                            <div class="name"> {:__('Today user login')}</div>
+                                            <div class="value"> <?php echo $todayuserlogin; ?></div>
+                                            <div class="name"> <?php echo __('Today user login'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -237,8 +290,8 @@
                                     <div class="col-xs-6  stat-col">
                                         <div class="stat-icon"><i class="fa fa-line-chart"></i></div>
                                         <div class="stat">
-                                            <div class="value"> {$todayorder}</div>
-                                            <div class="name"> {:__('Today order')}</div>
+                                            <div class="value"> <?php echo $todayorder; ?></div>
+                                            <div class="name"> <?php echo __('Today order'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -247,8 +300,8 @@
                                     <div class="col-xs-6  stat-col">
                                         <div class="stat-icon"><i class="fa fa-users"></i></div>
                                         <div class="stat">
-                                            <div class="value"> {$unsettleorder}</div>
-                                            <div class="name"> {:__('Unsettle order')}</div>
+                                            <div class="value"> <?php echo $unsettleorder; ?></div>
+                                            <div class="name"> <?php echo __('Unsettle order'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -257,8 +310,8 @@
                                     <div class="col-xs-6  stat-col">
                                         <div class="stat-icon"><i class="fa fa-list-alt"></i></div>
                                         <div class="stat">
-                                            <div class="value"> {$sevendnu}</div>
-                                            <div class="name"> {:__('Seven dnu')}</div>
+                                            <div class="value"> <?php echo $sevendnu; ?></div>
+                                            <div class="name"> <?php echo __('Seven dnu'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -267,8 +320,8 @@
                                     <div class="col-xs-6 stat-col">
                                         <div class="stat-icon"><i class="fa fa-dollar"></i></div>
                                         <div class="stat">
-                                            <div class="value"> {$sevendau}</div>
-                                            <div class="name"> {:__('Seven dau')}</div>
+                                            <div class="value"> <?php echo $sevendau; ?></div>
+                                            <div class="name"> <?php echo __('Seven dau'); ?></div>
                                         </div>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-success" style="width: 25%"></div>
@@ -280,7 +333,7 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-top:15px;">
+                <div class="row" style="margin-top:50px;">
 
                     <div class="col-lg-12">
                     </div>
@@ -288,13 +341,13 @@
                         <div class="panel bg-blue">
                             <div class="panel-body">
                                 <div class="panel-title">
-                                    <span class="label label-success pull-right">{:__('Real time')}</span>
-                                    <h5>{:__('Category count')}</h5>
+                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
+                                    <h5><?php echo __('Category count'); ?></h5>
                                 </div>
                                 <div class="panel-content">
                                     <h1 class="no-margins">1234</h1>
                                     <div class="stat-percent font-bold text-gray"><i class="fa fa-commenting"></i> 1234</div>
-                                    <small>{:__('Category count tips')}</small>
+                                    <small><?php echo __('Category count tips'); ?></small>
                                 </div>
                             </div>
                         </div>
@@ -303,13 +356,13 @@
                         <div class="panel bg-aqua-gradient">
                             <div class="panel-body">
                                 <div class="ibox-title">
-                                    <span class="label label-info pull-right">{:__('Real time')}</span>
-                                    <h5>{:__('Attachment count')}</h5>
+                                    <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
+                                    <h5><?php echo __('Attachment count'); ?></h5>
                                 </div>
                                 <div class="ibox-content">
                                     <h1 class="no-margins">1043</h1>
                                     <div class="stat-percent font-bold text-gray"><i class="fa fa-modx"></i> 2592</div>
-                                    <small>{:__('Attachment count tips')}</small>
+                                    <small><?php echo __('Attachment count tips'); ?></small>
                                 </div>
                             </div>
                         </div>
@@ -319,8 +372,8 @@
                         <div class="panel bg-purple-gradient">
                             <div class="panel-body">
                                 <div class="ibox-title">
-                                    <span class="label label-primary pull-right">{:__('Real time')}</span>
-                                    <h5>{:__('Article count')}</h5>
+                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
+                                    <h5><?php echo __('Article count'); ?></h5>
                                 </div>
                                 <div class="ibox-content">
 
@@ -328,13 +381,13 @@
                                         <div class="col-md-6">
                                             <h1 class="no-margins">1234</h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>{:__('Comment count')}</small>
+                                                <small><?php echo __('Comment count'); ?></small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <h1 class="no-margins">6754</h1>
                                             <div class="font-bold"><i class="fa fa-heart"></i>
-                                                <small>{:__('Like count')}</small>
+                                                <small><?php echo __('Like count'); ?></small>
                                             </div>
                                         </div>
                                     </div>
@@ -346,8 +399,8 @@
                         <div class="panel bg-green-gradient">
                             <div class="panel-body">
                                 <div class="ibox-title">
-                                    <span class="label label-primary pull-right">{:__('Real time')}</span>
-                                    <h5>{:__('News count')}</h5>
+                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
+                                    <h5><?php echo __('News count'); ?></h5>
                                 </div>
                                 <div class="ibox-content">
 
@@ -355,13 +408,13 @@
                                         <div class="col-md-6">
                                             <h1 class="no-margins">5302</h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>{:__('Comment count')}</small>
+                                                <small><?php echo __('Comment count'); ?></small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <h1 class="no-margins">8205</h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>{:__('Like count')}</small>
+                                                <small><?php echo __('Like count'); ?></small>
                                             </div>
                                         </div>
                                     </div>
@@ -371,33 +424,33 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-lg-4">
                         <div class="box box-danger">
                             <div class="box-header with-border">
-                                <h3 class="box-title">{:__('Recent news')}</h3>
+                                <h3 class="box-title"><?php echo __('Recent news'); ?></h3>
 
                                 <div class="box-tools pull-right">
                                 </div>
                             </div>
                             <div class="box-body">
                                 <ul class="products-list product-list-in-box">
-                                    {for start="1" end="8"}
+                                    <?php $__FOR_START_1059347811__=1;$__FOR_END_1059347811__=8;for($i=$__FOR_START_1059347811__;$i < $__FOR_END_1059347811__;$i+=1){ ?>
                                     <li class="item">
                                         <div class="product-img">
-                                            <img src="__CDN__/assets/img/avatar.png" style="height:40px;width:40px;">
+                                            <img src="/assets/img/avatar.png" style="height:40px;width:40px;">
                                         </div>
                                         <div class="product-info">
                                             <a href="https://www.fastadmin.net" target="_blank" class="product-title">
                                                 FastAdmin
-                                                <span class="label label-{:$i%3===0?'warning':($i%2===0?'success':'info')} pull-right">开源免费</span>
+                                                <span class="label label-<?php echo $i%3===0?'warning':($i%2===0?'success':'info'); ?> pull-right">开源免费</span>
                                             </a>
                                             <span class="product-description">
                                               一款基于ThinkPHP5+Bootstrap的极速后台开发框架
                                             </span>
                                         </div>
                                     </li>
-                                    {/for}
+                                    <?php } ?>
                                 </ul>
                             </div>
                         </div>
@@ -405,7 +458,7 @@
                     <div class="col-lg-4">
                         <div class="box box-success">
                             <div class="box-header with-border">
-                                <h3 class="box-title">{:__('Recent discussion')}</h3>
+                                <h3 class="box-title"><?php echo __('Recent discussion'); ?></h3>
 
                                 <div class="box-tools pull-right">
                                 </div>
@@ -429,69 +482,69 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="box box-info">
-                            <div class="box-header"><h3 class="box-title">{:__('Server info')}</h3></div>
+                            <div class="box-header"><h3 class="box-title"><?php echo __('Server info'); ?></h3></div>
                             <div class="box-body" style="padding-top:0;">
                                 <table class="table table-striped">
                                     <tbody>
                                     <tr>
-                                        <td width="140">{:__('FastAdmin version')}</td>
-                                        <td>{$Think.config.fastadmin.version} <a href="javascript:;" class="btn btn-xs btn-checkversion">检查最新版</a></td>
+                                        <td width="140"><?php echo __('FastAdmin version'); ?></td>
+                                        <td><?php echo \think\Config::get('fastadmin.version'); ?> <a href="javascript:;" class="btn btn-xs btn-checkversion">检查最新版</a></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('FastAdmin addon version')}</td>
-                                        <td>{$addonversion}</td>
+                                        <td><?php echo __('FastAdmin addon version'); ?></td>
+                                        <td><?php echo $addonversion; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Thinkphp version')}</td>
-                                        <td>{:THINK_VERSION}</td>
+                                        <td><?php echo __('Thinkphp version'); ?></td>
+                                        <td><?php echo THINK_VERSION; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Sapi name')}</td>
-                                        <td>{:php_sapi_name()}</td>
+                                        <td><?php echo __('Sapi name'); ?></td>
+                                        <td><?php echo php_sapi_name(); ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Debug mode')}</td>
-                                        <td>{$Think.config.app_debug?__('Yes'):__('No')}</td>
+                                        <td><?php echo __('Debug mode'); ?></td>
+                                        <td><?php echo \think\Config::get('app_debug')?__('Yes'):__('No'); ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Software')}</td>
-                                        <td>{$Think.server.SERVER_SOFTWARE}</td>
+                                        <td><?php echo __('Software'); ?></td>
+                                        <td><?php echo \think\Request::instance()->server('SERVER_SOFTWARE'); ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Upload mode')}</td>
-                                        <td>{$uploadmode}</td>
+                                        <td><?php echo __('Upload mode'); ?></td>
+                                        <td><?php echo $uploadmode; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Upload url')}</td>
-                                        <td>{$config.upload.uploadurl}</td>
+                                        <td><?php echo __('Upload url'); ?></td>
+                                        <td><?php echo $config['upload']['uploadurl']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Upload Cdn url')}</td>
-                                        <td>{$config.upload.cdnurl}</td>
+                                        <td><?php echo __('Upload Cdn url'); ?></td>
+                                        <td><?php echo $config['upload']['cdnurl']; ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Timezone')}</td>
-                                        <td>{:date_default_timezone_get()}</td>
+                                        <td><?php echo __('Timezone'); ?></td>
+                                        <td><?php echo date_default_timezone_get(); ?></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Cdn url')}</td>
-                                        <td>__CDN__</td>
+                                        <td><?php echo __('Cdn url'); ?></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td>{:__('Language')}</td>
-                                        <td>{$config.language}</td>
+                                        <td><?php echo __('Language'); ?></td>
+                                        <td><?php echo $config['language']; ?></td>
                                     </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="tab-pane fade" id="two">
                 <div class="row">
                     <div class="col-xs-12">
-                        {:__('Custom zone')}
+                        <?php echo __('Custom zone'); ?>
                     </div>
                 </div>
             </div>
@@ -500,8 +553,18 @@
 </div>
 <script>
     var Orderdata = {
-        column: {:json_encode(array_keys($paylist))},
-        paydata: {:json_encode(array_values($paylist))},
-        createdata: {:json_encode(array_values($createlist))},
+        column: <?php echo json_encode(array_keys($paylist)); ?>,
+        paydata: <?php echo json_encode(array_values($paylist)); ?>,
+        createdata: <?php echo json_encode(array_values($createlist)); ?>,
     };
 </script>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/require<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js" data-main="/assets/js/require-backend<?php echo \think\Config::get('app_debug')?'':'.min'; ?>.js?v=<?php echo htmlentities($site['version']); ?>"></script>
+    </body>
+</html>

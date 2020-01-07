@@ -186,18 +186,15 @@ class BackendAgent extends Controller
 
         // 语言检测
         $lang = strip_tags($this->request->langset());
-
         if (Session::get('config')) {
           $site = Session::get("config");
         } else {
-          // 获取一下写入
-          if (Session::get('agent.id')) {
-            $site = $this->resetConfig();
-          } else {
-            $site = [];
+          $this->resetConfig();
+          $site = Session::get("config");
+          if (count($site) === 0) {
+            $site['version'] = Config::get('agentSite.version');
           }
         }
-        $site['version'] = Config::get('agentSite.version');
         $upload = \app\common\model\Config::upload();
 
         // 上传信息配置后
@@ -541,7 +538,7 @@ class BackendAgent extends Controller
       protected function resetConfig()
       {
         $config = [];
-        foreach (AgentConfig::all(['agent_id' => Session::get('agent')['id']]) as $k => $v) {
+        foreach (AgentConfig::all(['agent_id' => Session::get('agent.id')]) as $k => $v) {
           $value = $v->toArray();
           if (in_array($value['type'], ['selects', 'checkbox', 'images', 'files'])) {
             $value['value'] = explode(',', $value['value']);

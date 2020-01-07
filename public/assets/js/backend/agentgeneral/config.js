@@ -5,11 +5,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格参数配置
             Table.api.init({
                 extend: {
-                    index_url: 'agentGeneral/config/index',
-                    add_url: 'agentGeneral/config/add',
-                    edit_url: 'agentGeneral/config/edit',
-                    del_url: 'agentGeneral/config/del',
-                    multi_url: 'agentGeneral/config/multi',
+                    index_url: 'agentgeneral/config/index',
+                    add_url: 'agentgeneral/config/add',
+                    edit_url: 'agentgeneral/config/edit',
+                    del_url: 'agentgeneral/config/del',
+                    multi_url: 'agentgeneral/config/multi',
                     table: 'config',
                 }
             });
@@ -93,7 +93,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 var that = this;
                 Layer.prompt({title: __('Please input your email'), formType: 0}, function (value, index) {
                     Backend.api.ajax({
-                        url: "general/config/emailtest",
+                        url: "agentgeneral/config/emailtest",
                         data: $(that).closest("form").serialize() + "&receiver=" + value
                     });
                 });
@@ -108,7 +108,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     title: '提示'
                 }, function (index) {
                     Backend.api.ajax({
-                        url: "general/config/del",
+                        url: "agentgeneral/config/del",
                         data: {name: $(that).data("name")}
                     }, function () {
                         $(that).closest("tr").remove();

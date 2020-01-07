@@ -2,173 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4613a205-8697-4101-b139-89722c517133" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/agent/behavior/AgentLog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Addon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Addon/stubs/addon.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Addon/stubs/config.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Addon/stubs/controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Addon/stubs/info.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Api/lang/zh-cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Api/library/Builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Api/library/Extractor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Api/template/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/add.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/controllerindex.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/edit.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/checkbox.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/fieldlist.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/heading-html.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/radio.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/recyclebin-html.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/select.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/html/switch.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/index.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/javascript.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/lang.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/checkbox.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/datetime.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/enum.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/modelinit.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/modelrelationmethod.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/multiple.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/radio.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/recyclebinjs.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/mixins/select.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/recyclebin.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/relationmodel.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Crud/stubs/validate.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Install.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Install/fastadmin.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Install/install.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Menu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Min.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Min/r.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Min/stubs/css.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/command/Min/stubs/js.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/common.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/Addon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/Ajax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/Dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentGeneral/Attachment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentGeneral/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentGeneral/Profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentauth/Agent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentauth/Agentlog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentauth/Group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/agentauth/Rule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/user/Group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/user/Rule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/controller/user/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/addon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentAuth/agent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentAuth/group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentAuth/rule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentGeneral/attachment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentGeneral/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentGeneral/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/ajax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/user/group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/user/rule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/user/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/library/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/library/traits/Backend.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/Agent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/AgentAuthGroup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/AgentAuthGroupAccess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/AgentAuthRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/AgentLog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/UserGroup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/model/UserRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/tags.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/validate/Agent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/validate/AgentAuthRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/validate/AgentCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/validate/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/validate/UserGroup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/validate/UserRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/addon/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/addon/config.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/addon/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentCategory/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentCategory/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentCategory/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/select.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentGeneral/config/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentGeneral/profile/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agent/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agent/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agent/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agentlog/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agentlog/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/group/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/group/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/group/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/rule/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/rule/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/rule/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/agentauth/rule/tpl.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/common/control.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/common/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/common/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/common/meta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/common/script.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/dashboard/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/index/agentIndex.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/index/agentLogin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/index/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/index/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/layout/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/group/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/group/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/group/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/rule/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/rule/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/rule/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/user/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/agent/view/user/user/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common/controller/BackendAgent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common/model/AgentCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common/model/AgentConfig.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/extra/agentSite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/fast/AgentAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/agent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/attachment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/agent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/agentlog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/rule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/common/model/AgentAttachment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agentdashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/addons.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/addons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/4e/819c837d54a6ed09abc77a8560a66f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/202001/04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/03e962b43caa25de69f83631b5b06451.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/327a13d32572ff214aff5f26cd721f0f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/5c18da05af124d99d17dd2197deaa407.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/6646cd3a0a26a05ab75f8b9d1d4490ea.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/86a385d14fd41db72524b6ef10fd4219.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/controller/Ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/controller/Ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/controller/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/controller/Agentcategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/controller/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/controller/Agentdashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/controller/agentGeneral/Attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/controller/agentgeneral/Attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/controller/agentGeneral/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/controller/agentgeneral/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/controller/agentGeneral/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/controller/agentgeneral/Profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentcategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentGeneral/attachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentgeneral/attachment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentGeneral/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentgeneral/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentGeneral/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentgeneral/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/lang/zh-cn/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agentdashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/validate/AgentCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/validate/Agentcategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentCategory/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentcategory/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentCategory/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentcategory/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentCategory/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentcategory/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentgeneral/attachment/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentgeneral/attachment/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentgeneral/attachment/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentGeneral/attachment/select.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentgeneral/attachment/select.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentGeneral/config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentgeneral/config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentGeneral/profile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentgeneral/profile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentauth/agent/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agent/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentauth/agentlog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentauth/agentlog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentauth/group/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentauth/group/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/agentauth/rule/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentauth/rule/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/common/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/common/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/agent/view/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/agent/view/agentdashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/controller/BackendAgent.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/controller/BackendAgent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/common/model/AgentConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common/model/AgentConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/extra/agentSite.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/extra/agentSite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentcategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/attachment.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/attachment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentauth/agent.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/agent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentauth/agentlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/agentlog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/general/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/general/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backend/general/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/general/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/log/202001/06.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/202001/06.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/4a61e75cc112d004a6e08ce4bb4c29d0.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/8939509bf2f65bc872dcf41c8fb8af7f.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/b3cc56983d278d528430bffe43ef9b42.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/e56a0c3d8eeccf1708c305445f8eb257.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/e56a0c3d8eeccf1708c305445f8eb257.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,120 +62,24 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/command/Menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1508">
-              <caret line="116" column="28" lean-forward="true" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-              <folding>
-                <element signature="e#37#71#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-              <folding>
-                <element signature="e#40#69#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-              <folding>
-                <element signature="e#45#75#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Adminlog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-              <folding>
-                <element signature="e#45#75#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Rule.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
-              <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-              <folding>
-                <element signature="e#45#79#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/general/Profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
-              <folding>
-                <element signature="e#48#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/library/Auth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1780">
-              <caret line="414" column="42" selection-start-line="414" selection-start-column="42" selection-end-line="414" selection-end-column="42" />
-              <folding>
-                <element signature="e#37#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/tags.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding>
-                <element signature="e#7#81#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/common/library/Menu.php">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
-              <folding>
-                <element signature="e#38#72#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-390">
+              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/behavior/AdminLog.php">
+        <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Group.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="-1090">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#50#91#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -315,6 +101,17 @@
       <find>$this-&gt;config</find>
       <find>$layout</find>
       <find>auth</find>
+      <find>refre</find>
+      <find>add</find>
+      <find>submit</find>
+      <find>general</find>
+      <find>Button</find>
+      <find>button</find>
+      <find>check</find>
+      <find>url</find>
+      <find>upload</find>
+      <find>build_toolbar</find>
+      <find>group_ids</find>
     </findStrings>
     <replaceStrings>
       <replace>agent</replace>
@@ -326,34 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/agent/model/UserGroup.php" />
-        <option value="$PROJECT_DIR$/application/agent/model/UserRule.php" />
-        <option value="$PROJECT_DIR$/application/agent/validate/Agent.php" />
-        <option value="$PROJECT_DIR$/application/agent/validate/AgentAuthRule.php" />
-        <option value="$PROJECT_DIR$/application/agent/validate/AgentCategory.php" />
-        <option value="$PROJECT_DIR$/application/agent/validate/User.php" />
-        <option value="$PROJECT_DIR$/application/agent/validate/UserGroup.php" />
-        <option value="$PROJECT_DIR$/application/agent/validate/UserRule.php" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentAuth/agentlog/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentAuth/agent/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentCategory/index.html" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentCategory.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentAuth/agent.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentAuth/agentlog.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentAuth/group.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/attachment.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/config.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentGeneral/profile.js" />
-        <option value="$PROJECT_DIR$/application/config.php" />
-        <option value="$PROJECT_DIR$/application/agent/behavior/AgentLog.php" />
-        <option value="$PROJECT_DIR$/application/agent/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/model/AgentLog.php" />
-        <option value="$PROJECT_DIR$/application/index/view/index/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/view/index/login.html" />
-        <option value="$PROJECT_DIR$/application/agent/controller/agentAuth/Agent.php" />
-        <option value="$PROJECT_DIR$/application/agent/controller/agentAuth/Group.php" />
-        <option value="$PROJECT_DIR$/application/agent/controller/AgentIndex.php" />
-        <option value="$PROJECT_DIR$/public/agent.php" />
         <option value="$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl" />
         <option value="$PROJECT_DIR$/application/agent/view/index/agentIndex.html" />
         <option value="$PROJECT_DIR$/application/agent/view/common/menu.html" />
@@ -363,7 +132,6 @@
         <option value="$PROJECT_DIR$/public/assets/js/backend/agentAuth/rule.js" />
         <option value="$PROJECT_DIR$/application/agent/view/agentAuth/rule/index.html" />
         <option value="$PROJECT_DIR$/application/agent/library/traits/Backend.php" />
-        <option value="$PROJECT_DIR$/application/common/controller/BackendAgent.php" />
         <option value="$PROJECT_DIR$/application/agent/controller/agentAuth/Rule.php" />
         <option value="$PROJECT_DIR$/application/agent/controller/agentauth/Rule.php" />
         <option value="$PROJECT_DIR$/application/agent/view/agentauth/rule/add.html" />
@@ -377,6 +145,35 @@
         <option value="$PROJECT_DIR$/application/admin/tags.php" />
         <option value="$PROJECT_DIR$/application/admin/behavior/AdminLog.php" />
         <option value="$PROJECT_DIR$/application/common/library/Menu.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/dashboard/index.html" />
+        <option value="$PROJECT_DIR$/application/extra/agentSite.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentauth/rule/edit.html" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentdashboard/index.html" />
+        <option value="$PROJECT_DIR$/application/agent/view/common/header.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/config.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/general/config.js" />
+        <option value="$PROJECT_DIR$/application/common/model/AgentConfig.php" />
+        <option value="$PROJECT_DIR$/application/common/controller/BackendAgent.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentgeneral/config/index.html" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentgeneral/Profile.php" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentgeneral/Config.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/general/profile.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/profile.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/attachment.js" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentgeneral/profile/index.html" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentgeneral/Attachment.php" />
+        <option value="$PROJECT_DIR$/application/agent/controller/Ajax.php" />
+        <option value="$PROJECT_DIR$/application/common/model/AgentAttachment.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentcategory/index.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentcategory.js" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentgeneral/attachment/index.html" />
+        <option value="$PROJECT_DIR$/application/agent/common.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentauth/agent/index.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentauth/agent.js" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentauth/agentlog/index.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentauth/agentlog.js" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentauth/group/index.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js" />
       </list>
     </option>
   </component>
@@ -414,7 +211,7 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="1930" />
     <option name="height" value="1047" />
@@ -442,7 +239,64 @@
               <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
               <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="agentauth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="agentauth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,17 +307,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/extend/fast" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/common/model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\extend\fast" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\index" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\common\model" />
       <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view" />
       <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\public\assets\js\backend" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\public" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\extend\fast" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -490,17 +344,19 @@
       <updated>1578129900228</updated>
       <workItem from="1578129901383" duration="1059000" />
       <workItem from="1578271032185" duration="17713000" />
-      <workItem from="1578300757034" duration="9453000" />
+      <workItem from="1578300757034" duration="9587000" />
+      <workItem from="1578356796552" duration="14869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28225000" />
+    <option name="totallyTimeSpent" value="43228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19796138" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20439914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -520,129 +376,64 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23390558" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.45666668" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="1718" column="27" selection-start-line="1718" selection-start-column="27" selection-end-line="1718" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/extra/agentSite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Hook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="89" column="27" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/AgentLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="51" column="42" lean-forward="true" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-          <folding>
-            <element signature="e#35#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="66" column="34" lean-forward="true" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
-          <folding>
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/layout/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/common/control.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/common/script.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/index/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="101" column="78" selection-start-line="101" selection-start-column="78" selection-end-line="101" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/AgentAuthGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Agent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="258" column="17" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
-          <folding>
-            <element signature="e#45#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Agentlog.php">
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentdashboard/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
           <folding>
-            <element signature="e#50#85#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Group.php">
+    <entry file="file://$PROJECT_DIR$/application/agent/view/common/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="155" column="37" selection-start-line="155" selection-start-column="37" selection-end-line="155" selection-end-column="37" />
+        <state relative-caret-position="121">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
           <folding>
-            <element signature="e#50#86#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentIndex.js" />
-    <entry file="file://$PROJECT_DIR$/application/agent/common.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentdashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="e#7#37#0#PHP" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2184" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/config.php">
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/config.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/agent/tags.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,289 +445,336 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/behavior/AgentLog.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Validate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="234">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/tags.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="-488">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#7#81#0#PHP" expanded="true" />
+            <element signature="e#38#68#0#PHP" expanded="true" />
+            <element signature="e#1105#5368#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/agent.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <element signature="e#7#81#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="234">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/view/tpl/dispatch_jump.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="48" column="84" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentIndex/index.html">
+    <entry file="file://$PROJECT_DIR$/application/agent/view/general/attachment/add.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/index/agentLogin.html">
+    <entry file="file://$PROJECT_DIR$/application/agent/view/general/attachment/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/index/index.html">
+    <entry file="file://$PROJECT_DIR$/application/agent/view/general/config/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="-6070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/general/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/common/menu.html">
+    <entry file="file://$PROJECT_DIR$/application/common/model/AgentConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extend/fast/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+        <state relative-caret-position="-3328">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
-            <element signature="e#7#81#0#PHP" expanded="true" />
-            <element signature="e#728#741#0#PHP" expanded="true" />
+            <element signature="e#36#52#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/AgentAuthRule.php">
+    <entry file="file://$PROJECT_DIR$/application/common/library/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="-754">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#35#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extend/fast/AgentAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5134">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-          <folding>
-            <element signature="e#7#81#0#PHP" expanded="true" />
-            <element signature="e#728#741#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/index/agentIndex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/library/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#37#63#0#PHP" expanded="true" />
+            <element signature="e#38#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/agent/library/traits/Backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="-492">
+          <caret line="148" column="37" lean-forward="true" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="37" />
           <folding>
+            <element signature="e#44#71#0#PHP" expanded="true" />
             <element signature="e#444#908#0#PHP" />
             <element signature="e#941#1827#0#PHP" />
             <element signature="e#1860#2604#0#PHP" />
             <element signature="e#2672#4330#0#PHP" />
-            <element signature="e#4405#6383#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/rule/edit.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/rule/tpl.html">
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentauth/rule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        <state relative-caret-position="288">
+          <caret line="1475" column="20" selection-start-line="1475" selection-start-column="20" selection-end-line="1475" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/rule/index.html">
+    <entry file="file://$PROJECT_DIR$/application/agent/library/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="26" column="70" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thinkphp/library/think/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="160" column="110" selection-start-line="160" selection-start-column="92" selection-end-line="160" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/controller/BackendAgent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="261" column="80" selection-start-line="261" selection-start-column="80" selection-end-line="261" selection-end-column="80" />
-          <folding>
-            <element signature="e#41#68#0#PHP" expanded="true" />
-            <element signature="e#3468#4166#0#PHP" />
-            <element signature="e#6900#12610#0#PHP" />
-            <element signature="e#12696#13132#0#PHP" />
-            <element signature="e#13293#17159#0#PHP" />
-            <element signature="e#17196#17542#0#PHP" />
-            <element signature="e#17576#18165#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Rule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-          <folding>
-            <element signature="e#50#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/rule/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/command/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1508">
-          <caret line="116" column="28" lean-forward="true" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-          <folding>
-            <element signature="e#37#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-          <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-          <folding>
-            <element signature="e#45#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Adminlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#45#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/auth/Rule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
-          <folding>
-            <element signature="e#45#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/general/Profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
-          <folding>
-            <element signature="e#48#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/library/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1780">
-          <caret line="414" column="42" selection-start-line="414" selection-start-column="42" selection-end-line="414" selection-end-column="42" />
+        <state relative-caret-position="-4106">
+          <caret line="204" column="29" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
           <folding>
             <element signature="e#37#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/behavior/AdminLog.php">
+    <entry file="file://$PROJECT_DIR$/application/common/controller/BackendAgent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="e#41#68#0#PHP" expanded="true" />
+            <element signature="e#2553#3438#0#PHP" />
+            <element signature="e#3468#4166#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentgeneral/config/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="194" column="171" selection-start-line="194" selection-start-column="166" selection-end-line="194" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentgeneral/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#213#599#0" />
+            <element signature="e#695#1602#0" />
+            <element signature="e#1728#1878#0" />
+            <element signature="e#2016#2464#0" />
+            <element signature="e#2533#2654#0" />
+            <element signature="e#2777#2944#0" />
+            <element signature="e#3037#3512#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentgeneral/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding>
+            <element signature="e#53#92#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/general/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/extra/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentgeneral/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentgeneral/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1040">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/AgentAttachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentgeneral/Attachment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/Ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="126" column="30" selection-start-line="126" selection-start-column="30" selection-end-line="126" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentgeneral/profile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="47" column="109" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/agentcategory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/validate/Agentcategory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/tags.php">
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentcategory/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentcategory/edit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/Agentcategory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="80">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#7#81#0#PHP" expanded="true" />
+            <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/library/Menu.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentcategory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="122" column="35" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="35" />
+        <state relative-caret-position="-64">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentcategory/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="51" lean-forward="true" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentgeneral/attachment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
-            <element signature="e#38#72#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/common/control.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentgeneral/attachment/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/agent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentauth/agent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-618">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/agentlog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentauth/agentlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/auth/group.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/group/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/group/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/group/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/agent/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1090">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#50#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
         </state>
       </provider>
     </entry>

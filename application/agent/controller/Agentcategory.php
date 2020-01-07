@@ -12,7 +12,7 @@ use fast\Tree;
  * @icon   fa fa-list
  * @remark 用于统一管理网站的所有分类,分类可进行无限级分类,分类类型请在常规管理->系统配置->字典配置中添加
  */
-class Category extends BackendAgent
+class Agentcategory extends BackendAgent
 {
 
     /**

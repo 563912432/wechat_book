@@ -1,6 +1,6 @@
 <?php
 
-namespace app\agent\controller\general;
+namespace app\agent\controller\agentGeneral;
 
 use app\agent\model\Agent;
 use app\common\controller\BackendAgent;
