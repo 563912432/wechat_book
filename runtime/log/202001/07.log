@@ -31934,3 +31934,1447 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.006456s ]
 [ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000479s ]
 [ sql ] [ SQL ] SELECT * FROM `we_agent_auth_rule` ORDER BY `weigh` DESC,`id` ASC [ RunTime:0.000638s ]
+---------------------------------------------------------------
+[ 2020-01-07T13:48:27+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/addon?addtabs=1
+[运行时间：0.051427s] [吞吐率：19.45req/s] [内存消耗：3,595.17kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000972s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578375982',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000979s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\agent\controller\Addon->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Addon.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\addon\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000150s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001300s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004798s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003870s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004119s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `we_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2020-01-07T13:48:28+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=addon&v=1.0.1
+[运行时间：0.046868s] [吞吐率：21.34req/s] [内存消耗：3,551.38kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000987s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578375982',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'addon',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000991s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000173s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000721s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.005327s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004125s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2020-01-07T13:48:32+08:00 ] 192.168.1.17 POST www.wechatbook.com/agent/addon/install
+[运行时间：1.658396s] [吞吐率：0.60req/s] [内存消耗：3,717.70kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001016s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => 'install',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578375982',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?addtabs=1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wechatbook.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '116',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'wechat',
+  'force' => '0',
+  'uid' => '21975',
+  'token' => 'c867ab7b-cfcb-4f9d-856d-b1e15ddfa474',
+  'version' => '1.1.0',
+  'faversion' => '1.0.0.20191212_beta',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000933s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\agent\controller\Addon->install[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Addon.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.034589s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000948s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004278s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003853s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004283s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat' , '微信管理' , 'fa fa-wechat' , 1 , 0 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.036533s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/autoreply' , '自动回复管理' , 'fa fa-reply-all' , 1 , 112 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.024630s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/autoreply/index' , '查看' , 0 , 'fa fa-circle-o' , 113 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.028429s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/autoreply/add' , '添加' , 0 , 'fa fa-circle-o' , 113 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.029377s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/autoreply/edit' , '修改' , 0 , 'fa fa-circle-o' , 113 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.028376s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/autoreply/del' , '删除' , 0 , 'fa fa-circle-o' , 113 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.029464s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/autoreply/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 113 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.028349s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/config' , '配置管理' , 'fa fa-cog' , 1 , 112 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.029478s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/config/index' , '查看' , 0 , 'fa fa-circle-o' , 119 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.028291s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/config/add' , '添加' , 0 , 'fa fa-circle-o' , 119 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.029485s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/config/edit' , '修改' , 0 , 'fa fa-circle-o' , 119 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.028218s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/config/del' , '删除' , 0 , 'fa fa-circle-o' , 119 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.029454s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/config/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 119 , 'normal' , 1578376111 , 1578376111) [ RunTime:0.028368s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu' , '菜单管理' , 'fa fa-list' , 1 , 112 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.029348s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu/index' , '查看' , 0 , 'fa fa-circle-o' , 125 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.028418s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu/add' , '添加' , 0 , 'fa fa-circle-o' , 125 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.029412s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu/edit' , '修改' , 0 , 'fa fa-circle-o' , 125 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.028542s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu/del' , '删除' , 0 , 'fa fa-circle-o' , 125 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.029142s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu/sync' , '同步' , 0 , 'fa fa-circle-o' , 125 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.028451s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/menu/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 125 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.029408s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response' , '资源管理' , 'fa fa-list-alt' , 1 , 112 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.028507s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response/index' , '查看' , 0 , 'fa fa-circle-o' , 132 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.032479s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response/add' , '添加' , 0 , 'fa fa-circle-o' , 132 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.041842s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response/edit' , '修改' , 0 , 'fa fa-circle-o' , 132 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.029407s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response/del' , '删除' , 0 , 'fa fa-circle-o' , 132 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.028342s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response/select' , '选择' , 0 , 'fa fa-circle-o' , 132 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.037753s ]
+[ sql ] [ SQL ] INSERT INTO `we_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('wechat/response/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 132 , 'normal' , 1578376112 , 1578376112) [ RunTime:0.028443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_log` [ RunTime:0.004507s ]
+[ sql ] [ SQL ] INSERT INTO `we_agent_log` (`title` , `content` , `url` , `agent_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('插件管理' , '{\"name\":\"wechat\",\"force\":\"0\",\"uid\":\"21975\",\"token\":\"c867ab7b-cfcb-4f9d-856d-b1e15ddfa474\",\"version\":\"1.1.0\",\"faversion\":\"1.0.0.20191212_beta\"}' , '/agent/addon/install' , 1 , 'agent' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' , '192.168.1.17' , 1578376112) [ RunTime:0.029215s ]
+---------------------------------------------------------------
+[ 2020-01-07T13:48:32+08:00 ] 192.168.1.17 POST www.wechatbook.com/agent/index/index
+[运行时间：0.135424s] [吞吐率：7.38req/s] [内存消耗：3,643.56kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002685s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578375982',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wechatbook.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '18',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'refreshmenu',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001301s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ RUN ] app\agent\controller\Index->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.034069s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011075s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.006699s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.005070s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_log` [ RunTime:0.003959s ]
+[ sql ] [ SQL ] INSERT INTO `we_agent_log` (`title` , `content` , `url` , `agent_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/agent/index/index' , 1 , 'agent' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' , '192.168.1.17' , 1578376112) [ RunTime:0.029419s ]
+---------------------------------------------------------------
+[ 2020-01-07T13:48:34+08:00 ] 192.168.1.17 GET www.wechatbook.com/
+[运行时间：0.035884s] [吞吐率：27.87req/s] [内存消耗：2,577.11kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000954s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578375982',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000952s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-01-07T13:48:41+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/wipecache?type=all&_=1578375986873
+[运行时间：0.052833s] [吞吐率：18.93req/s] [内存消耗：3,643.20kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000984s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'wipecache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'all',
+  '_' => '1578375986873',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000947s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->wipecache[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000272s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004461s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003695s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:12+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/agentdashboard?ref=addtabs
+[运行时间：0.053105s] [吞吐率：18.83req/s] [内存消耗：3,268.86kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001715s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'agentdashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001263s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000313s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004479s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003759s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000358s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:12+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/index/index
+[运行时间：0.072402s] [吞吐率：13.81req/s] [内存消耗：3,835.80kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001137s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001015s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ RUN ] app\agent\controller\Index->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\index\agentIndex.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000144s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004702s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.005286s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:12+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/agentdashboard?addtabs=1
+[运行时间：0.059831s] [吞吐率：16.71req/s] [内存消耗：3,744.44kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001139s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'agentdashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001808s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/agentdashboard.php
+[ info ] [ RUN ] app\agent\controller\Agentdashboard->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Agentdashboard.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\agentdashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000139s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004977s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004275s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.003820s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `we_auth_rule` WHERE  `name` = 'agentdashboard' LIMIT 1 [ RunTime:0.000219s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:12+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=index&v=1.0.1
+[运行时间：0.054587s] [吞吐率：18.32req/s] [内存消耗：3,533.14kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000971s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/index/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000976s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000388s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010225s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004037s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004020s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:12+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=agentdashboard&v=1.0.1
+[运行时间：0.047233s] [吞吐率：21.17req/s] [内存消耗：3,532.29kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000984s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/agentdashboard?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'agentdashboard',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000986s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/agentdashboard.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000253s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004743s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004296s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:13+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/addon?addtabs=1
+[运行时间：0.055632s] [吞吐率：17.98req/s] [内存消耗：3,763.71kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001015s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000928s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\agent\controller\Addon->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Addon.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\addon\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004243s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003708s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004231s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `we_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:13+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=addon&v=1.0.1
+[运行时间：0.052192s] [吞吐率：19.16req/s] [内存消耗：3,551.38kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000946s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'addon',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000922s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010539s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.003849s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004575s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:17+08:00 ] 192.168.1.17 POST www.wechatbook.com/agent/addon/state
+[运行时间：0.143231s] [吞吐率：6.98req/s] [内存消耗：3,850.32kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001082s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => 'state',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?addtabs=1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wechatbook.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '34',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'wechat',
+  'action' => 'disable',
+  'force' => '0',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001858s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\agent\controller\Addon->state[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Addon.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.033740s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.005646s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003781s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004927s ]
+[ sql ] [ SQL ] SELECT * FROM `we_auth_rule` WHERE  `name` = 'wechat' LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name` FROM `we_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000416s ]
+[ sql ] [ SQL ] UPDATE `we_auth_rule`  SET `status`='hidden'  WHERE  `id` IN (119,123,122,121,120,124,113,118,117,116,115,114,112,125,131,130,129,128,127,126,132,137,136,135,134,133,138) [ RunTime:0.033553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_log` [ RunTime:0.004631s ]
+[ sql ] [ SQL ] INSERT INTO `we_agent_log` (`title` , `content` , `url` , `agent_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('插件管理 禁用启用' , '{\"name\":\"wechat\",\"action\":\"disable\",\"force\":\"0\"}' , '/agent/addon/state' , 1 , 'agent' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' , '192.168.1.17' , 1578377177) [ RunTime:0.028090s ]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\controller\wechat\Autoreply.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\controller\wechat\Config.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\controller\wechat\Menu.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\controller\wechat\Response.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\lang\zh-cn\wechat\autoreply.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\lang\zh-cn\wechat\config.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\lang\zh-cn\wechat\response.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\model\WechatAutoreply.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\model\WechatCaptcha.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\model\WechatConfig.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\model\WechatContext.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\model\WechatResponse.php): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\autoreply\add.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\autoreply\edit.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\autoreply\index.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\config\add.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\config\edit.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\config\index.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\menu\index.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\response\add.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\response\edit.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\response\index.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\view\wechat\response\select.html): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\public\assets\js\backend\wechat\autoreply.js): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\public\assets\js\backend\wechat\config.js): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\public\assets\js\backend\wechat\menu.js): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+[ error ] [2]unlink(F:\phpstudy\PHPTutorial\WWW\wechatBook\public\assets\js\backend\wechat\response.js): No such file or directory[F:\phpstudy\PHPTutorial\WWW\wechatBook\vendor\karsonzhang\fastadmin-addons\src\addons\Service.php:458]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:17+08:00 ] 192.168.1.17 POST www.wechatbook.com/agent/index/index
+[运行时间：0.127924s] [吞吐率：7.82req/s] [内存消耗：3,643.56kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000010s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001383s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wechatbook.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '18',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'refreshmenu',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001754s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ RUN ] app\agent\controller\Index->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.038670s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004264s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.005255s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT * FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_log` [ RunTime:0.005934s ]
+[ sql ] [ SQL ] INSERT INTO `we_agent_log` (`title` , `content` , `url` , `agent_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/agent/index/index' , 1 , 'agent' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' , '192.168.1.17' , 1578377177) [ RunTime:0.031892s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:20+08:00 ] 192.168.1.17 POST www.wechatbook.com/agent/addon/uninstall
+[运行时间：0.962994s] [吞吐率：1.04req/s] [内存消耗：3,802.23kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001675s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => 'uninstall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?addtabs=1',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wechatbook.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '19',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'wechat',
+  'force' => '0',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000977s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\agent\controller\Addon->uninstall[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Addon.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.035901s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000696s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004174s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003581s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004023s ]
+[ sql ] [ SQL ] SELECT * FROM `we_auth_rule` WHERE  `name` = 'wechat' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name` FROM `we_auth_rule` ORDER BY `weigh` DESC [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `we_auth_rule` WHERE  `id` IN (119,123,122,121,120,124,113,118,117,116,115,114,112,125,131,130,129,128,127,126,132,137,136,135,134,133,138) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 112 [ RunTime:0.063604s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 113 [ RunTime:0.029418s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 114 [ RunTime:0.028349s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 115 [ RunTime:0.029535s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 116 [ RunTime:0.028398s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 117 [ RunTime:0.029546s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 118 [ RunTime:0.028384s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 119 [ RunTime:0.029592s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 120 [ RunTime:0.028275s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 121 [ RunTime:0.029566s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 122 [ RunTime:0.028303s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 123 [ RunTime:0.029614s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 124 [ RunTime:0.028289s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 125 [ RunTime:0.029597s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 126 [ RunTime:0.028621s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 127 [ RunTime:0.029306s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 128 [ RunTime:0.028430s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 129 [ RunTime:0.029574s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 130 [ RunTime:0.028259s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 131 [ RunTime:0.029546s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 132 [ RunTime:0.028441s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 133 [ RunTime:0.029589s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 134 [ RunTime:0.028447s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 135 [ RunTime:0.029510s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 136 [ RunTime:0.028307s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 137 [ RunTime:0.029494s ]
+[ sql ] [ SQL ] DELETE FROM `we_auth_rule`    WHERE  `id` = 138 [ RunTime:0.028392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_log` [ RunTime:0.004686s ]
+[ sql ] [ SQL ] INSERT INTO `we_agent_log` (`title` , `content` , `url` , `agent_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('插件管理' , '{\"name\":\"wechat\",\"force\":\"0\"}' , '/agent/addon/uninstall' , 1 , 'agent' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' , '192.168.1.17' , 1578377180) [ RunTime:0.030346s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:20+08:00 ] 192.168.1.17 POST www.wechatbook.com/agent/index/index
+[运行时间：0.147713s] [吞吐率：6.77req/s] [内存消耗：3,646.28kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001380s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?ref=addtabs',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.wechatbook.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '18',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'refreshmenu',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002694s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ RUN ] app\agent\controller\Index->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.063508s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.006865s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004002s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_log` [ RunTime:0.004991s ]
+[ sql ] [ SQL ] INSERT INTO `we_agent_log` (`title` , `content` , `url` , `agent_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/agent/index/index' , 1 , 'agent' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36' , '192.168.1.17' , 1578377180) [ RunTime:0.057661s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:21+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/addon?ref=addtabs
+[运行时间：0.042329s] [吞吐率：23.62req/s] [内存消耗：3,322.86kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000961s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000931s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000155s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004447s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003670s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:21+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/index/index
+[运行时间：0.074639s] [吞吐率：13.40req/s] [内存消耗：3,700.17kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001008s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000934s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ RUN ] app\agent\controller\Index->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Index.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\index\agentIndex.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000143s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010732s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.005286s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004325s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `we_agent_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:22+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/agentdashboard?addtabs=1
+[运行时间：0.064068s] [吞吐率：15.61req/s] [内存消耗：3,568.06kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001613s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'agentdashboard',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001947s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/agentdashboard.php
+[ info ] [ RUN ] app\agent\controller\Agentdashboard->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Agentdashboard.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\agentdashboard\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'totaluser',
+  6 => 'totalviews',
+  7 => 'totalorder',
+  8 => 'totalorderamount',
+  9 => 'todayuserlogin',
+  10 => 'todayusersignup',
+  11 => 'todayorder',
+  12 => 'unsettleorder',
+  13 => 'sevendnu',
+  14 => 'sevendau',
+  15 => 'paylist',
+  16 => 'createlist',
+  17 => 'addonversion',
+  18 => 'uploadmode',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000164s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001172s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.007141s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004296s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004401s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `we_auth_rule` WHERE  `name` = 'agentdashboard' LIMIT 1 [ RunTime:0.000193s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:22+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/addon?addtabs=1
+[运行时间：0.063200s] [吞吐率：15.82req/s] [内存消耗：3,595.13kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001028s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'addon',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001191s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ RUN ] app\agent\controller\Addon->index[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Addon.php ]
+[ info ] [ VIEW ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\view\addon\index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+) ]
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000167s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010272s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004355s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.003624s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_auth_rule` [ RunTime:0.004476s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `we_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:22+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=index&v=1.0.1
+[运行时间：0.046973s] [吞吐率：21.29req/s] [内存消耗：3,533.14kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000011s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000943s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/index/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000948s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000714s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.005937s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004453s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:22+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=agentdashboard&v=1.0.1
+[运行时间：0.048931s] [吞吐率：20.44req/s] [内存消耗：3,532.29kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000981s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/agentdashboard?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'agentdashboard',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000932s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/agentdashboard.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000148s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.004562s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004688s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2020-01-07T14:06:22+08:00 ] 192.168.1.17 GET www.wechatbook.com/agent/ajax/lang?callback=define&controllername=addon&v=1.0.1
+[运行时间：0.048503s] [吞吐率：20.62req/s] [内存消耗：3,551.38kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000012s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000970s ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'agent',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=goa5b4vc471jbnonsklcqe2th0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1578302692,1578375982; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1578376115',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.wechatbook.com/agent/addon?addtabs=1',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.wechatbook.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'addon',
+  'v' => '1.0.1',
+)
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001244s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\agent\controller\Ajax->lang[ F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\Ajax.php ]
+[ info ] [ LANG ] F:\phpstudy\PHPTutorial\WWW\wechatBook\public/../application/agent/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\agent\behavior\AgentLog @app_end [ RunTime:0.000149s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000582s ] mysql:host=127.0.0.1;dbname=wechat_book;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_group_access` [ RunTime:0.005255s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `we_agent_auth_group_access` `aga` LEFT JOIN `we_agent_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_agent_auth_rule` [ RunTime:0.004392s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `we_agent_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.000692s ]
