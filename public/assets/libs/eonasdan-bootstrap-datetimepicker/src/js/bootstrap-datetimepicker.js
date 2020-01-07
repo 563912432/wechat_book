@@ -901,7 +901,7 @@
                         });
                     }
                     notifyEvent({
-                        type: 'dp.error',
+                        type: 'error',
                         date: targetMoment,
                         oldDate: oldDate
                     });

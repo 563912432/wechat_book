@@ -3760,7 +3760,7 @@ var Editor = /** @class */ (function () {
             })(idx);
             this.context.memo('help.formatH' + idx, this.lang.help['formatH' + idx]);
         }
-        
+
         this.insertParagraph = this.wrapCommand(function () {
             _this.typing.insertParagraph(_this.editable);
         });
@@ -4246,7 +4246,7 @@ var Editor = /** @class */ (function () {
             range.createFromNodeAfter($image[0]).select();
             _this.afterCommand();
         }).fail(function (e) {
-            _this.context.triggerEvent('image.upload.error', e);
+            _this.context.triggerEvent('error', e);
         });
     };
     /**
@@ -4258,13 +4258,13 @@ var Editor = /** @class */ (function () {
         $$1.each(files, function (idx, file) {
             var filename = file.name;
             if (_this.options.maximumImageFileSize && _this.options.maximumImageFileSize < file.size) {
-                _this.context.triggerEvent('image.upload.error', _this.lang.image.maximumFileSizeError);
+                _this.context.triggerEvent('error', _this.lang.image.maximumFileSizeError);
             }
             else {
                 readFileAsDataURL(file).then(function (dataURL) {
                     return _this.insertImage(dataURL, filename);
                 }).fail(function () {
-                    _this.context.triggerEvent('image.upload.error');
+                    _this.context.triggerEvent('error');
                 });
             }
         });

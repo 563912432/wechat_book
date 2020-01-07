@@ -2,8 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4613a205-8697-4101-b139-89722c517133" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/agent/controller/agent_book/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/controller/agent_book/Chapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/controller/agent_book/Error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agent_book/book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/lang/zh-cn/agent_book/chapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/model/agent_book/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/model/agent_book/Chapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/validate/agent_book/Book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/validate/agent_book/Chapter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/book/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/book/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/book/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/book/recyclebin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/chapter/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/chapter/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/chapter/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/agent/view/agent_book/chapter/recyclebin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agent_book/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/backend/agent_book/chapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/js/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/summernote/assets/js/summernote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/summernote/assets/js/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/summernote/assets/js/summernote.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/addons/summernote/js/summernote.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require-backend.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-backend.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require-frontend.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require-frontend.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/require.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/require.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/bootstrap-daterangepicker/example/amd/require.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/bootstrap-daterangepicker/example/amd/require.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/less/dist/less.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/less/dist/less.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/nice-validator/dist/jquery.validator.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/nice-validator/dist/jquery.validator.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/plupload/js/jquery.ui.plupload/jquery.ui.plupload.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/plupload/js/jquery.ui.plupload/jquery.ui.plupload.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/plupload/js/moxie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/plupload/js/moxie.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/plupload/js/plupload.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/plupload/js/plupload.full.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/toastr/toastr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/toastr/toastr.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/log/202001/07.log" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/log/202001/07.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/4a61e75cc112d004a6e08ce4bb4c29d0.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/temp/e596ec1eeba2a5dd979114404eaf82b9.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/temp/e596ec1eeba2a5dd979114404eaf82b9.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,32 +56,51 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Menu.php">
+        <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-              <folding>
-                <element signature="e#47#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/agent/controller/Addon.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="85" column="22" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
-              <folding>
-                <element signature="e#40#79#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/wechat/config.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agent_book/error.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="31" column="95" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/agent/controller/agent_book/Error.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+              <folding>
+                <element signature="e#51#100#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -75,9 +132,14 @@
       <find>group_ids</find>
       <find>Signin</find>
       <find>admin</find>
+      <find>BookError</find>
+      <find>agent_book</find>
+      <find>bookList</find>
     </findStrings>
     <replaceStrings>
       <replace>agent</replace>
+      <replace>Bookerror</replace>
+      <replace>agentbook</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -86,34 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/admin/command/Menu.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Index.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/auth/Admin.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/auth/Adminlog.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/auth/Rule.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/general/Profile.php" />
-        <option value="$PROJECT_DIR$/application/admin/library/Auth.php" />
-        <option value="$PROJECT_DIR$/application/admin/tags.php" />
-        <option value="$PROJECT_DIR$/application/admin/behavior/AdminLog.php" />
-        <option value="$PROJECT_DIR$/application/common/library/Menu.php" />
-        <option value="$PROJECT_DIR$/application/agent/view/dashboard/index.html" />
-        <option value="$PROJECT_DIR$/application/extra/agentSite.php" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentauth/rule/edit.html" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentdashboard/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/view/common/header.html" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/config.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/general/config.js" />
-        <option value="$PROJECT_DIR$/application/common/model/AgentConfig.php" />
-        <option value="$PROJECT_DIR$/application/common/controller/BackendAgent.php" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentgeneral/config/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/controller/agentgeneral/Profile.php" />
-        <option value="$PROJECT_DIR$/application/agent/controller/agentgeneral/Config.php" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/general/profile.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/profile.js" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/agentgeneral/attachment.js" />
-        <option value="$PROJECT_DIR$/application/agent/view/agentgeneral/profile/index.html" />
-        <option value="$PROJECT_DIR$/application/agent/controller/agentgeneral/Attachment.php" />
-        <option value="$PROJECT_DIR$/application/agent/controller/Ajax.php" />
         <option value="$PROJECT_DIR$/application/common/model/AgentAttachment.php" />
         <option value="$PROJECT_DIR$/application/agent/view/agentcategory/index.html" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/agentcategory.js" />
@@ -125,7 +159,6 @@
         <option value="$PROJECT_DIR$/public/assets/js/backend/agentauth/agentlog.js" />
         <option value="$PROJECT_DIR$/application/agent/view/agentauth/group/index.html" />
         <option value="$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/addons/wechat/library/Wechat.php" />
         <option value="$PROJECT_DIR$/application/agent/model/WechatAutoreply.php" />
         <option value="$PROJECT_DIR$/application/agent/model/WechatCaptcha.php" />
@@ -137,6 +170,35 @@
         <option value="$PROJECT_DIR$/application/agent/controller/wechat/Response.php" />
         <option value="$PROJECT_DIR$/application/agent/controller/wechat/Menu.php" />
         <option value="$PROJECT_DIR$/application/agent/controller/Addon.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentbook/BookError.php" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentbook/Book.php" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentbook/Chapter.php" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agentbook/Bookerror.php" />
+        <option value="$PROJECT_DIR$/application/agent/model/agentbook/Bookerror.php" />
+        <option value="$PROJECT_DIR$/application/agent/model/agentbook/Book.php" />
+        <option value="$PROJECT_DIR$/application/agent/model/agentbook/Chapter.php" />
+        <option value="$PROJECT_DIR$/application/agent/validate/agentbook/Book.php" />
+        <option value="$PROJECT_DIR$/application/agent/validate/agentbook/BookError.php" />
+        <option value="$PROJECT_DIR$/application/agent/validate/agentbook/Bookerror.php" />
+        <option value="$PROJECT_DIR$/application/agent/validate/agentbook/Chapter.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentbook/book/index.html" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentbook/book/recyclebin.html" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentbook/bookerror/index.html" />
+        <option value="$PROJECT_DIR$/application/agent/view/agentbook/bookerror/recyclebin.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentbook/book.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentbook/bookerror.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agentbook/chapter.js" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agent_book/Book_error.php" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agent_book/BookError.php" />
+        <option value="$PROJECT_DIR$/application/agent/model/agent_book/BookError.php" />
+        <option value="$PROJECT_DIR$/application/agent/validate/agent_book/Error.php" />
+        <option value="$PROJECT_DIR$/application/agent/model/agent_book/Error.php" />
+        <option value="$PROJECT_DIR$/application/agent/lang/zh-cn/agent_book/error.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agent_book/error/edit.html" />
+        <option value="$PROJECT_DIR$/application/agent/controller/agent_book/Error.php" />
+        <option value="$PROJECT_DIR$/application/agent/view/agent_book/error/add.html" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/agent_book/error.js" />
       </list>
     </option>
   </component>
@@ -196,7 +258,96 @@
             <path>
               <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
               <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="agent_book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="agent_book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="agent_book" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="agent" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="agent_book" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wechatBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechatBook" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="agent_book" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,23 +358,24 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/agent/controller/agent_book" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view\agent_book" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\validate\agent_book" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\model\agent_book" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\lang\zh-cn\agent_book" />
       <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\lang\zh-cn" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\common\model" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\controller\agent_book" />
       <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\public\assets\js\backend" />
-      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\extend\fast" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\view" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\validate" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\wechatBook\application\agent\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -251,18 +403,18 @@
       <workItem from="1578129901383" duration="1059000" />
       <workItem from="1578271032185" duration="17713000" />
       <workItem from="1578300757034" duration="9587000" />
-      <workItem from="1578356796552" duration="18378000" />
+      <workItem from="1578356796552" duration="26055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46737000" />
+    <option name="totallyTimeSpent" value="54414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20064378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,382 +460,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/group/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/group/add.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/group/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/agentauth/agent/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-488" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentauth/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1090">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#50#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentauth/group.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="77" column="14" lean-forward="true" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatCaptcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1078">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#35#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatContext.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Autoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2274">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2092">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/library/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/library/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#38#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/model/WechatAutoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/model/WechatCaptcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/model/WechatConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatAutoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/library/Wechat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding>
-            <element signature="e#41#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/controller/wechat/Autoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/controller/wechat/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/controller/wechat/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/application/admin/controller/wechat/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/controller/Captcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#44#77#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/model/WechatAutoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/model/WechatCaptcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#39#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/model/WechatConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/model/WechatContext.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/model/WechatResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/Wechat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="e#33#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/wechat/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="e#44#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatCaptcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#35#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatContext.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/model/WechatAutoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2196">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/wechat/autoreply.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/wechat/autoreply/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Autoreply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/wechat/autoreply.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-          <folding>
-            <element signature="e#47#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/addon/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6086" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/addon/add.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/agent/view/addon/config.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2100" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/wechat/config.php">
@@ -696,6 +477,313 @@
           <folding>
             <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/wechat/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+          <folding>
+            <element signature="e#47#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentbook/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="40" />
+          <folding>
+            <element signature="e#51#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentbook/Chapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="53" />
+          <folding>
+            <element signature="e#51#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/agentbook/book.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agentbook/Bookerror.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/agentbook/bookerror.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agentbook/Bookerror.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agentbook/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agentbook/Chapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/validate/agentbook/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/validate/agentbook/Bookerror.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/validate/agentbook/Chapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/book/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/book/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/book/recyclebin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="152" selection-start-line="12" selection-start-column="152" selection-end-line="12" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/bookerror/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/bookerror/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="157" selection-start-line="22" selection-start-column="157" selection-end-line="22" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/bookerror/recyclebin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="157" selection-start-line="12" selection-start-column="157" selection-end-line="12" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/bookerror/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-702" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentbook/book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="88" column="47" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentbook/bookerror.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agentbook/chapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agentbook/book/edit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/agent_book/book.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/validate/agent_book/Book.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/book/add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agent_book/Book.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agent_book/book_error.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agent_book/book.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agent_book/chapter.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/validate/AgentBookChapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/agent_book/book_error.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agent_book/BookError.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agent_book/BookError.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agent_book/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/validate/agent_book/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/recyclebin.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agent_book/Chapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/model/agent_book/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="e#46#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/lang/zh-cn/agent_book/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/chapter/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/chapter/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agent_book/Chapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/controller/agent_book/Error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <element signature="e#51#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/agent/view/agent_book/error/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/agent_book/error.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="31" column="95" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
         </state>
       </provider>
     </entry>
