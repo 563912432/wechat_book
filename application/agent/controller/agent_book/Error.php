@@ -76,15 +76,18 @@ class Error extends BackendAgent
                 return $this->selectpage();
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            $myWhere['we_agent_book_error.agent_id'] = session('agent.id');
             $total = $this->model
                     ->with(['agentbook','agentbookchapter'])
                     ->where($where)
+                    ->where($myWhere)
                     ->order($sort, $order)
                     ->count();
 
             $list = $this->model
                     ->with(['agentbook','agentbookchapter'])
                     ->where($where)
+                    ->where($myWhere)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();

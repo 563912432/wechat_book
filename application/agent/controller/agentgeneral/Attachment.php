@@ -44,17 +44,19 @@ class Attachment extends BackendAgent
                     }
                 };
             }
-
+            $myWhere['agent_id'] = session('agent.id');
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
                 ->where($mimetypeQuery)
                 ->where($where)
+                ->where($myWhere)
                 ->order($sort, $order)
                 ->count();
 
             $list = $this->model
                 ->where($mimetypeQuery)
                 ->where($where)
+                ->where($myWhere)
                 ->order($sort, $order)
                 ->limit($offset, $limit)
                 ->select();

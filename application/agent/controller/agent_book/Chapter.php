@@ -31,7 +31,7 @@ class Chapter extends BackendAgent
         $this->assign('bookList', $bookList);
 
         // 必须将结果集转换为数组
-        $chapterList = collection($this->model->order('weigh', 'desc')->with(['agentbook'])->select())->toArray();
+        $chapterList = collection($this->model->where(['we_agent_book_chapter.agent_id' => session('agent.id')])->order('weigh', 'desc')->with(['agentbook'])->select())->toArray();
         foreach ($chapterList as $k => &$v)
         {
           $v['title'] = __($v['title']);

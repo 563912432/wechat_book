@@ -1,4 +1,4 @@
-define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefined, Backend, Table, Form) {
+define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'layer'], function ($, undefined, Backend, Table, Form, Layer) {
 
     var Controller = {
         index: function () {
@@ -32,7 +32,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'agentbookchapter.title', title: __('Agentbookchapter.title')},
                         {field: 'thumb', title: __('Thumb'), formatter: Table.api.formatter.image},
                         {field: 'info', title: __('Info')},
-                        {field: 'status', title: __('Status')},
+                        {field: 'status', title: __('Status'), formatter: Table.api.formatter.toggle},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         // {field: 'agentbook.id', title: __('Agentbook.id')},
@@ -50,7 +50,21 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         // {field: 'agentbookchapter.createtime', title: __('Agentbookchapter.createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         // {field: 'agentbookchapter.updatetime', title: __('Agentbookchapter.updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         // {field: 'agentbookchapter.deletetime', title: __('Agentbookchapter.deletetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
-                        {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
+                        {   field: 'operate',
+                            title: __('Operate'),
+                            table: table,
+                            events: Table.api.events.operate,
+                            formatter: Table.api.formatter.operate,
+                            buttons: [
+                                {
+                                    name: 'Watch',
+                                    text: __('Watch'),
+                                    classname: 'btn btn-xs btn-success btn-dialog',
+                                    icon: 'fa fa-list',
+                                    url: 'agent_book/error/edit'
+                                }
+                            ]
+                        }
                     ]
                 ]
             });
@@ -122,6 +136,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         edit: function () {
             Controller.api.bindevent();
+            $(".btn-close").on('click',function(){
+                Fast.api.close();
+            });
         },
         api: {
             bindevent: function () {

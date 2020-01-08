@@ -42,6 +42,7 @@ class Agentlog extends BackendAgent
     {
         if ($this->request->isAjax())
         {
+            $myWhere['agent_id'] = session('agent.id');
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
                     ->where($where)

@@ -16,6 +16,7 @@ return [
     'Edit'                                                  => '编辑',
     'Del'                                                   => '删除',
     'Delete'                                                => '删除',
+  'Watch'                                                   => '查看',
     'Import'                                                => '导入',
     'Export'                                                => '导出',
     'All'                                                   => '全部',

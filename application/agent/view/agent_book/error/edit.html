@@ -3,19 +3,29 @@
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Book_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-book_id" data-rule="required" data-source="book/index" class="form-control selectpage" name="row[book_id]" type="text" value="{$row.book_id|htmlentities}">
+            <!--<input id="c-book_id" data-rule="required" data-source="book/index" class="form-control selectpage" name="row[book_id]" type="text" value="{$row.book_id|htmlentities}">-->
+            <select id="c-book_id" data-rule="required" class="form-control selectpicker" name="row[book_id]" disabled>
+                {foreach name="bookList" item="vo"}
+                <option value="{$vo.id}" {in name="key" value="$row.book_id"}selected{/in}>{$vo.name}</option>
+                {/foreach}
+            </select>
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Chapter_id')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-chapter_id" data-rule="required" data-source="chapter/index" class="form-control selectpage" name="row[chapter_id]" type="text" value="{$row.chapter_id|htmlentities}">
+            <!--<input id="c-chapter_id" data-rule="required" data-source="chapter/index" class="form-control selectpage" name="row[chapter_id]" type="text" value="{$row.chapter_id|htmlentities}">-->
+            <select id="c-pid" data-rule="required" class="form-control selectpicker" name="row[chapter_id]" disabled>
+                {foreach name="chapterList" item="vo"}
+                <option class="" value="{$key}" {in name="key" value="$row.chapter_id"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Thumb')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <div class="input-group">
+            <!--<div class="input-group">
                 <input id="c-thumb" class="form-control" size="50" name="row[thumb]" type="text" value="{$row.thumb|htmlentities}">
                 <div class="input-group-addon no-border no-padding">
                     <span><button type="button" id="plupload-thumb" class="btn btn-danger plupload" data-input-id="c-thumb" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-thumb"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
@@ -23,26 +33,20 @@
                 </div>
                 <span class="msg-box n-right" for="c-thumb"></span>
             </div>
-            <ul class="row list-inline plupload-preview" id="p-thumb"></ul>
+            <ul class="row list-inline plupload-preview" id="p-thumb"></ul>-->
+            <img src="{$row.thumb|htmlentities}" alt="" style="width: 80px;height: auto;margin-top: 10px">
         </div>
     </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Info')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-info" class="form-control" name="row[info]" type="text" value="{$row.info|htmlentities}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-status" class="form-control" name="row[status]" type="number" value="{$row.status|htmlentities}">
+            <textarea readonly id="c-info" class="form-control" rows="5" name="row[info]" cols="50">{$row.info|htmlentities}</textarea>
         </div>
     </div>
     <div class="form-group layer-footer">
         <label class="control-label col-xs-12 col-sm-2"></label>
         <div class="col-xs-12 col-sm-8">
-            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
-            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+            <button type="button" class="btn btn-success btn-close">{:__('OK')}</button>
         </div>
     </div>
 </form>
