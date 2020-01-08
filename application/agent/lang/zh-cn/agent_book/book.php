@@ -9,5 +9,6 @@ return [
     'Info'       => '详情',
     'Createtime' => '创建时间',
     'Updatetime' => '更新时间',
-    'Deletetime' => '删除时间'
+    'Deletetime' => '删除时间',
+    'Template'   => '关联模板'
 ];

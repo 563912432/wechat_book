@@ -2,6 +2,8 @@
 
 namespace app\agent\controller\agent_book;
 
+use app\admin\model\BookTpl as BookTplModel;
+use app\agent\model\agent_book\Book as BookModel;
 use app\common\controller\BackendAgent;
 use Exception;
 use think\Db;
@@ -29,6 +31,10 @@ class Book extends BackendAgent
         parent::_initialize();
         $this->model = new \app\agent\model\agent_book\Book;
         $this->agent_id = Session::get('agent.id');
+        // 关联模板
+        $tplModel = new BookTplModel();
+        $bookTplList = $tplModel->field('id, name')->select();
+        $this->assign('bookTplList', $bookTplList);
     }
 
     /**

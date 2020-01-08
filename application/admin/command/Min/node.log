@@ -1,0 +1,463 @@
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/sass/colorpicker.scss.css'
+In module tree:
+    require-backend
+      ../libs/require-css/css.min
+
+Error: Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/sass/colorpicker.scss.css'
+In module tree:
+    require-backend
+      ../libs/require-css/css.min
+
+    at Object.openSync (fs.js:438:3)
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/sass/colorpicker.css'
+In module tree:
+    require-backend
+      ../libs/require-css/css.min
+
+Error: Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/sass/colorpicker.css'
+In module tree:
+    require-backend
+      ../libs/require-css/css.min
+
+    at Object.openSync (fs.js:438:3)
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/sass/colorpicker.css'
+In module tree:
+    require-backend
+      ../libs/require-css/css.min
+
+Error: Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/sass/colorpicker.css'
+In module tree:
+    require-backend
+      ../libs/require-css/css.min
+
+    at Object.openSync (fs.js:438:3)
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+Error: Parse error using esprima for file: F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap-colorpicker/src/js/Colorpicker.js
+Error: Line 3: Unexpected token
+In module tree:
+    require-backend
+
+Error: Error: Parse error using esprima for file: F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap-colorpicker/src/js/Colorpicker.js
+Error: Line 3: Unexpected token
+In module tree:
+    require-backend
+
+    at F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\command\Min\r.js:25228:47
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/js.js'
+In module tree:
+    require-backend
+
+Error: Error: ENOENT: no such file or directory, open 'F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/js.js'
+In module tree:
+    require-backend
+
+    at Object.openSync (fs.js:438:3)
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+Error: Parse error using esprima for file: F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/js/Extension.js
+Error: Line 3: Unexpected token
+In module tree:
+    require-backend
+
+Error: Error: Parse error using esprima for file: F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/bootstrap-colorpicker/src/js/Extension.js
+Error: Line 3: Unexpected token
+In module tree:
+    require-backend
+
+    at F:\phpstudy\PHPTutorial\WWW\wechatBook\application\admin\command\Min\r.js:25228:47
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+
+
+Tracing dependencies for: require-frontend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/frontend-init.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/frontend.css
+
+
+Tracing dependencies for: require-backend
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-backend.min.js
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/jquery/dist/jquery.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap/dist/js/bootstrap.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-backend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/require-css/css.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-layer/dist/layer.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/toastr/toastr.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/fast.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/art-template/dist/template-native.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/moment.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/backend.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/backend-init.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/moment/locale/zh-cn.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap-table/dist/bootstrap-table.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap-table/dist/locale/bootstrap-table-zh-CN.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/tableExport.jquery.plugin/tableExport.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap-table/dist/extensions/export/bootstrap-table-export.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/../libs/plupload/js/moxie.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/plupload/js/plupload.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-upload.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/nice-validator/dist/jquery.validator.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/nice-validator/dist/local/zh-CN.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-validator.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-form.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/bootstrap-table-commonsearch.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/bootstrap-table-template.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/bootstrap-table/dist/extensions/page-jumpto/bootstrap-table-jumpto.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/require-table.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-dragsort/jquery.dragsort.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/jquery.drag.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/js/jquery.drop.min.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-addtabs/jquery.addtabs.js
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/libs/fastadmin-selectpage/selectpage.js
+
+
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.min.css
+----------------
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/bootstrap.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/fastadmin.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/skins/skin-green.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../css/iconfont.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/font-awesome/css/font-awesome.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/toastr/toastr.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-layer/dist/theme/default/layer.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-table/dist/bootstrap-table.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-daterangepicker/daterangepicker.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/nice-validator/dist/jquery.validator.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-select/dist/css/bootstrap-select.min.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/fastadmin-selectpage/selectpage.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/../libs/bootstrap-slider/slider.css
+F:/phpstudy/PHPTutorial/WWW/wechatBook/public/assets/css/backend.css
+

@@ -25,6 +25,7 @@ require.config({
         // 以下的包从bower的libs目录加载
         'jquery': '../libs/jquery/dist/jquery.min',
         'bootstrap': '../libs/bootstrap/dist/js/bootstrap.min',
+        /*'bootstrap-colorpicker': '../libs/bootstrap-colorpicker/src/js/Colorpicker',*/
         'bootstrap-datetimepicker': '../libs/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min',
         'bootstrap-daterangepicker': '../libs/bootstrap-daterangepicker/daterangepicker',
         'bootstrap-select': '../libs/bootstrap-select/dist/js/bootstrap-select.min',
@@ -57,6 +58,15 @@ require.config({
     shim: {
         'addons': ['backend'],
         'bootstrap': ['jquery'],
+        /*'bootstrap-colorpicker': {
+            deps: [
+                'jquery',
+                'bootstrap',
+                'css!../libs/bootstrap-colorpicker/src/sass/colorpicker',
+                'css!../libs/bootstrap/dist/css/bootstrap.min',
+            ],
+            exports: '$.fn.bootstrap-colorpicker'
+        },*/
         'bootstrap-table': {
             deps: [
                 'bootstrap',

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\admin\validate\agent_book;
+namespace app\agent\validate\agent_book;
 
 use think\Validate;
 
@@ -23,5 +23,5 @@ class Chapter extends Validate
         'add'  => [],
         'edit' => [],
     ];
-    
+
 }
