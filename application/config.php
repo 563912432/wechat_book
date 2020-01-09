@@ -138,6 +138,7 @@ return [
         '__PUBLIC__' => '',
         '__ROOT__'   => '',
         '__CDN__'    => '',
+        '__LIBS__'    => ROOT_PATH.'public'.DS.'assets'.DS.'libs',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => APP_PATH . 'common' . DS . 'view' . DS . 'tpl' . DS . 'dispatch_jump.tpl',

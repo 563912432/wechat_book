@@ -22,7 +22,7 @@ class BookTpl extends Validate
      */
     protected $scene = [
         'add'  => ['no'],
-        'edit' => ['no'],
+        'edit' => [],
     ];
 
 }

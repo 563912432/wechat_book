@@ -28,7 +28,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         // {field: 'agent_id', title: __('Agent_id')},
                         {field: 'name', title: __('Name')},
                         {field: 'thumb', title: __('Thumb'), formatter:Table.api.formatter.image},
-                        {field: 'brief', title: __('Brief')},
+                        {field: 'tpl.name', title: __('TplName')},
+                        // {field: 'brief', title: __('Brief')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
@@ -111,5 +112,19 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             }
         }
     };
+    $('.btn-watch').on('click', function () {
+        Fast.api.open('agent_book/book/detail', '模板图片预览', {
+            area: ['98%', '98%']
+        })
+    })
+    $('.org-image').on('click', function () {
+        var image = $(this).attr('data-image')
+        // Fast.api.open('agent_book/book/large', '大图预览')
+        layer.open({
+            type: 1,
+            content: "<div><img src='" + image + "' alt=''></div>",
+            area: ['98%', '98%']
+        })
+    })
     return Controller;
 });

@@ -28,13 +28,8 @@ class Book extends Model
 
     ];
 
-
-
-
-
-
-
-
-
-
+    public function tpl()
+    {
+      return $this->belongsTo('app\admin\model\BookTpl', 'tpl_id');
+    }
 }

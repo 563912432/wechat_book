@@ -1,0 +1,13 @@
+<div class="panel panel-default panel-intro">
+    {volist name="list" id="vo"}
+    <div style="font-size: 14px;margin-left: 10px">
+        <div>模板名称：{$vo.name}</div>
+        <div style="margin-top: 5px">模板预览：</div>
+        <div>
+            {volist name="vo.thumb" id="voo"}
+            <img class="org-image" data-image="{$voo}" src="{$voo}" alt="" style="width: 150px;height: auto;margin: 15px;cursor: pointer">
+            {/volist}
+        </div>
+    </div>
+    {/volist}
+</div>

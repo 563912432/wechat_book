@@ -3,6 +3,7 @@
 namespace app\agent\controller\agent_book;
 
 use app\admin\model\BookTpl as BookTplModel;
+use app\admin\model\BookTpl;
 use app\agent\model\agent_book\Book as BookModel;
 use app\common\controller\BackendAgent;
 use Exception;
@@ -66,12 +67,14 @@ class Book extends BackendAgent
         $total = $this->model
           ->where($where)
           ->where($myWhere)
+          ->with(['tpl'])
           ->order($sort, $order)
           ->count();
 
         $list = $this->model
           ->where($where)
           ->where($myWhere)
+          ->with(['tpl'])
           ->order($sort, $order)
           ->limit($offset, $limit)
           ->select();
@@ -129,4 +132,24 @@ class Book extends BackendAgent
       return $this->view->fetch();
     }
 
+    /*
+     * 模板图片预览
+     * */
+    public function detail()
+    {
+      // 所有模板的图片预览
+      $tplModel = new BookTpl();
+      $list = $tplModel->select();
+      foreach ($list as &$value) {
+        $value['thumb'] = explode(',', $value['thumb']);
+      }
+      $this->assign('list', $list);
+      return $this->view->fetch();
+    }
+
+    public function large($image)
+    {
+      $this->assign('image', $image);
+      return $this->view->fetch();
+    }
 }
