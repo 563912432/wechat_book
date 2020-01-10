@@ -23,8 +23,9 @@
                         <a class="btn btn-success btn-recyclebin btn-dialog {:$auth->check('agent_book/detail/recyclebin')?'':'hide'}" href="agent_book/detail/recyclebin" title="{:__('Recycle bin')}"><i class="fa fa-recycle"></i> {:__('Recycle bin')}</a>
                     </div>
                     <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
-                           data-operate-edit="{:$auth->check('agent_book/detail/edit')}" 
-                           data-operate-del="{:$auth->check('agent_book/detail/del')}" 
+                           data-operate-qrcode="{:$auth->check('agent_book/detail/qrcode')}"
+                           data-operate-edit="{:$auth->check('agent_book/detail/edit')}"
+                           data-operate-del="{:$auth->check('agent_book/detail/del')}"
                            width="100%">
                     </table>
                 </div>

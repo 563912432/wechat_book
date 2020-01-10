@@ -4,7 +4,9 @@ namespace app\agent\controller\agent_book;
 
 use app\agent\model\agent_book\Book as BookModel;
 use app\agent\model\agent_book\Chapter as ChapterModel;
+use app\admin\model\BookTpl as BookTplModel;
 use app\common\controller\BackendAgent;
+use Endroid\QrCode\QrCode;
 use Exception;
 use fast\Tree;
 use think\Db;
@@ -96,7 +98,14 @@ class Detail extends BackendAgent
                     ->select();
 
             foreach ($list as &$row) {
-              $row['url'] = 'http://www.ceshi.com/'.$row['agentbook']['id'].'/'.$row['id'];
+              $tpl_id = $row['agentbook']['tpl_id'];
+              $bookTplModel = new BookTplModel();
+              $tpl = $bookTplModel->where(['id' => $tpl_id])->value('no');
+              $url = 'http://' . $_SERVER['HTTP_HOST'];
+              $row['url'] = $url . '/'. $tpl . '/' . $row['book_id'] . '/' . $row['chapter_id']; //二维码内容
+              if ($row['qrcode']) {
+                $row['qrcode'] = '/uploads/erweima/'. $row['qrcode'];
+              }
             }
             $list = collection($list)->toArray();
             $result = array("total" => $total, "rows" => $list);
@@ -155,45 +164,53 @@ class Detail extends BackendAgent
     /*
      * 生成二维码
      * */
-    public function qrcode()
+    public function qrcode($ids = "")
     {
-      // 类库使用
-      $qrCode = new \Endroid\QrCode\QrCode();
-      // 设置生成二维码生成的各项参数
-      //设置版本号，QR码符号共有40种规格的矩阵，从21x21（版本1），到177x177（版本40），每一版本符号比前一版本 每边增加4个模块。
-      $setVersion = $qrCode -> setVersion(5);
-      //容错级别 2的容错率:30% 容错级别：0：15%，1：7%，2：30%，3：25%
-      $setErrorCorrection = $qrCode -> setErrorCorrection(2);
-      $setModuleSize = $qrCode -> setModuleSize(2);//设置QR码模块大小
-      $setImageType = $qrCode -> setImageType('png');//设置二维码保存类型
-//      $logo = 'uploads/accountPictrue/logo1.jpg';//logo图片
-//      $setLogo = $qrCode -> setLogo($logo);//二维码中间的图片
-//      $setLogoSize = $qrCode -> setLogoSize(360);//设置logo大小
-      $value = 'https://www.dongtianjr.com'; //二维码内容
-      $setText = $qrCode -> setText($value);//设置文字以隐藏QR码。
-      $setSize = $qrCode -> setSize(1024);//二维码生成后的大小
-      $setPadding = $qrCode -> setPadding(16);//设置二维码的边框宽度，默认16
-      $setDrawQuietZone = $qrCode -> setDrawQuietZone(true);//设置模块间距
-      $setDrawBorder = $qrCode -> setDrawBorder(true);//给二维码加边框。。。
+      if ($ids) {
+        $qrCode = new \Endroid\QrCode\QrCode();//实例化
+        $qrCode -> setVersion(5);//37*37
+        //设置版本号，QR码符号共有40种规格的矩阵，从21x21（版本1），到177x177（版本40），每一版本符号比前一版本 每边增加4个模块。
+        $setErrorCorrection = $qrCode -> setErrorCorrection(2); //容错级别,2的容错率:30%
+        // 容错级别：0：15%，1：7%，2：30%，3：25%
+        $qrCode -> setModuleSize(2);//设置QR码模块大小
+        $qrCode -> setImageType('png');//设置二维码保存类型
+//      $logo = ROOT_PATH.'/public/assets/img/test.jpg';//logo图片
+//      $qrCode -> setLogo($logo);//二维码中间的图片
+//      $qrCode -> setLogoSize(360);//设置logo大小
+        // 查相关信息
+        $info = $this->model->where(['we_agent_book_detail.id' => $ids])->with(['agentbook'])->find();
+        $tpl_id = $info['agentbook']['tpl_id'];
+        $bookTplModel = new BookTplModel();
+        $tpl = $bookTplModel->where(['id' => $tpl_id])->value('no');
+        $url = 'http://' . $_SERVER['HTTP_HOST'];
+        $value = $url . '/'. $tpl . '/' . $info['book_id'] . '/' . $info['chapter_id']; //二维码内容
+        $qrCode -> setText($value);//设置文字以隐藏QR码。
+        $qrCode -> setSize(480);//二维码生成后的大小
+        $qrCode -> setPadding(16);//设置二维码的边框宽度，默认16
+        $qrCode -> setDrawQuietZone(true);//设置模块间距
+        $qrCode -> setDrawBorder(true);//给二维码加边框。。。
 //      $text = 'XX销售，XX公司！一二';
 //      $setLabel = $qrCode -> setLabel($text);//在生成的图片下面加上文字
 //      $setLabelFontSize = $qrCode -> setLabelFontSize(39);//生成的文字大小、
 //      $lablePath = 'uploads/qr/qr.TTF';
 //      $setLabelFontPath = $qrCode -> setLabelFontPath($lablePath);//设置标签字体
-
-      $color_foreground = ['r' => 0, 'g' => 0, 'b' => 0, 'a' => 0];
-      $setForegroundColor = $qrCode -> setForegroundColor($color_foreground);//生成的二维码的颜色
-      $color_background = ['r' => 255, 'g' => 255, 'b' => 255, 'a' => 0];
-      $setBackgroundColor = $qrCode -> setBackgroundColor($color_background);//生成的图片背景颜色
-
-      if (!is_dir(config('CODE_UPLOAD_ROOT_PATH'))) {
-//        echo config('CODE_UPLOAD_ROOT_PATH');exit;
-        if (!mkdir(config('CODE_UPLOAD_ROOT_PATH'))) {
-          $this->error('文件上传根目录创建失败！请检查父目录写入权限');
+        $color_foreground = ['r' => 255, 'g' => 255, 'b' => 255, 'a' => 0];
+        $qrCode -> setForegroundColor($color_foreground);//生成的二维码的颜色
+        $color_background = ['r' => 0, 'g' => 0, 'b' => 0, 'a' => 0];
+        $qrCode -> setBackgroundColor($color_background);//生成的图片背景颜色
+        // 创建路径
+        if (!is_dir(config('CODE_UPLOAD_ROOT_PATH'))) {
+          mkdir(config('CODE_UPLOAD_ROOT_PATH'), 0777, true);
+        }
+        $flieName = config('CODE_UPLOAD_ROOT_PATH'). '/'. md5($value). '.png';//二维码的名字
+        $qrCodePath = md5($value). '.png';
+        $qrCode -> save($flieName);//生成二维码
+        if ($this->model->where(['id' => $ids])->setField(['qrcode' => $qrCodePath]) !== false) {
+          $this->success();
+        } else {
+          $this->error('生成失败');
         }
       }
-      $filepath = config('CODE_UPLOAD_ROOT_PATH');
-      $flieName = $filepath . md5($value). '.png';//二维码的名字
-      $qrCode -> save($flieName);//生成二维码
+      $this->error(__('Parameter %s can not be empty', 'ids'));
     }
 }

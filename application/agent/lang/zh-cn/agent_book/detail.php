@@ -38,5 +38,6 @@ return [
     'Agentbookchapter.updatetime' => '更新时间',
     'Agentbookchapter.deletetime' => '删除时间',
     'Url'                         => '二维码地址',
-    'Qrcode'                      => '生成二维码'
+    'Qrcode'                      => '生成二维码',
+    'UrlImg'                      => '二维码图片'
 ];

@@ -31,6 +31,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'agentbook.name', title: __('Agentbook.name')},
                         {field: 'agentbookchapter.title', title: __('Agentbookchapter.title')},
                         {field: 'url', title: __('Url')},
+                        {
+                            field: 'qrcode',
+                            title: __('UrlImg'),
+                            formatter: Controller.api.qrcode
+                        },
                         // {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         // {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {
@@ -43,19 +48,23 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                                 {
                                     name: 'Qrcode',
                                     text: __('Qrcode'),
-                                    classname: 'btn btn-xs btn-success',
+                                    classname: 'btn btn-xs btn-primary btn-ajax',
                                     icon: 'fa fa-qrcode',
                                     url: 'agent_book/detail/qrcode',
-                                    callback: function (data) {
-                                        layer.msg(data);
-                                    }
+                                    refresh: true
                                 }
                             ]
                         }
                     ]
                 ]
             });
-
+            $(document.body).on('click', '.qrcodeBig', function () {
+                var img = $(this).data('img');
+                layer.open({
+                    content: "<div style='text-align: center'><img src='" +img+ "'/></div>",
+                    area: ["620px", "650px"]
+                });
+            })
             // 为表格绑定事件
             Table.api.bindevent(table);
         },
@@ -125,9 +134,19 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         edit: function () {
             Controller.api.bindevent();
         },
+        qrcode: function () {
+            Controller.api.bindevent();
+        },
         api: {
             bindevent: function () {
                 Form.api.bindevent($("form[role=form]"));
+            },
+            qrcode: function (value, row, index) {
+                if (row.qrcode) {
+                    return '<div><a href="javascript:;"><img data-img="' +row.qrcode+ '" class="qrcodeBig" src="'+ row.qrcode + '" style="width: 30px;height: 30px"/></a><a download href="' +row.qrcode+ '" class="btn btn-xs btn-success btn-download"><i class="fa fa-download"></i></a></span></div>';
+                } else {
+                    return ''
+                }
             }
         }
     };

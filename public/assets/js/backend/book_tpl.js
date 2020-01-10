@@ -27,7 +27,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'id', title: __('Id')},
                         {field: 'name', title: __('Name')},
                         {field: 'no', title: __('No')},
-                        {field: 'thumb', title: __('Thumb'), formatter: Table.api.formatter.images},
+                        {
+                            field: 'thumb',
+                            title: __('Thumb'),
+                            // formatter: Table.api.formatter.images
+                            formatter: Controller.api.thumb
+                        },
                         // {field: 'remark', title: __('Remark')},
                         {field: 'createtime', title: __('Createtime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
                         {field: 'updatetime', title: __('Updatetime'), operate:'RANGE', addclass:'datetimerange', formatter: Table.api.formatter.datetime},
@@ -35,7 +40,18 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     ]
                 ]
             });
-
+            $(document.body).on('click', '.imageLarge', function () {
+                var thumbs = $(this).data('image')
+                var images = thumbs.split(',')
+                var html = ""
+                $.each(images, function (i, v) {
+                    html += "<img src='" +v+"' style='margin-right: 5px;margin-bottom: 10px'/>";
+                })
+                layer.open({
+                    content: html,
+                    area: ["80%", "85%"]
+                });
+            })
             // 为表格绑定事件
             Table.api.bindevent(table);
         },
@@ -108,6 +124,19 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         api: {
             bindevent: function () {
                 Form.api.bindevent($("form[role=form]"));
+            },
+            thumb: function (value, row, index) {
+                var thumbs = row.thumb.split(',')
+                if (thumbs.length > 0) {
+                    var html = "<a class='imageLarge' data-image='"+row.thumb+"' href='javascript:;'>"
+                    $.each(thumbs, function (i, v) {
+                        html += "<img src='" +v+"' style='height: 30px;width: 30px;margin-right: 5px'/>"
+                    })
+                    html += '</a>'
+                    return  html
+                } else {
+                    return ''
+                }
             }
         }
     };
