@@ -10,7 +10,10 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-/*return [
+use Think\Route;
+
+//Route::rule('/a', 'index/Template/template');
+return [
     //别名配置,别名只能是映射到控制器且访问时必须加上请求的方法
     '__alias__'   => [
     ],
@@ -22,8 +25,4 @@
 //            'admin' => 'admin',
 //            'api'   => 'api',
 //        ],
-];*/
-
-use think\Route;
-
-//Route::rule('template3', 'admin/Template/template3');
+];
